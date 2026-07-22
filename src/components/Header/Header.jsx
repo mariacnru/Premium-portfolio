@@ -1,7 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
-import Arcs from "./Header/Arcs";
+import Arcs from "./Arcs";
+import GridBackground from "./GridBackground";
 
-function Header() {
+function Header({ showBall, setShowBall }) {
   const target = useRef({ x: 0, y: 0 });
   const current = useRef({ x: 0, y: 0 });
 
@@ -18,6 +19,8 @@ function Header() {
 
     window.addEventListener("mousemove", handleMouseMove);
 
+    let animationId;
+
     function animate() {
       current.current.x += (target.current.x - current.current.x) * 0.08;
 
@@ -28,18 +31,25 @@ function Header() {
         y: current.current.y,
       });
 
-      requestAnimationFrame(animate);
+      animationId = requestAnimationFrame(animate);
     }
 
     animate();
 
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
+      cancelAnimationFrame(animationId);
     };
   }, []);
 
   return (
     <header
+      onMouseEnter={function () {
+        setShowBall(true);
+      }}
+      onMouseLeave={function () {
+        setShowBall(false);
+      }}
       className="
         relative
         flex
@@ -53,7 +63,12 @@ function Header() {
     >
       {/* Ball */}
       <div
-        className="ball"
+        className={`
+          ball
+          transition-opacity
+          duration-500
+          ${showBall ? "opacity-100" : "opacity-0"}
+        `}
         style={{
           left: mouse.x,
           top: mouse.y,
@@ -61,40 +76,12 @@ function Header() {
       ></div>
 
       {/* Grid */}
-      <div
-        className="
-          absolute
-          inset-0
-          z-10
-          grid
-          grid-cols-4
-          sm:grid-cols-6
-          md:grid-cols-8
-          lg:grid-cols-10
-          xl:grid-cols-12
-          gap-2
-          p-2
-        "
-      >
-        {Array.from({ length: 200 }).map(function (_, index) {
-          return (
-            <div
-              key={index}
-              className="
-                aspect-square
-                rounded-xl
-                bg-transparent
-                backdrop-blur-md
-              "
-            ></div>
-          );
-        })}
-      </div>
+      <GridBackground />
 
       {/* Hero Content */}
       <div className="relative z-20 flex flex-col items-center text-center">
-        {/* Arcs */}
         <Arcs />
+
         <span className="hero-label">Hello, I'm Maria</span>
 
         <h1 className="hero-title">Front-end Developer</h1>

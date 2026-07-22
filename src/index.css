@@ -1,7 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap");
+
 @import "tailwindcss";
 :root {
   --prymary-color: #c084fc;
+}
+
+html {
+  scrollbar-color: #c084fc #090313;
+}
+
+html::-webkit-scrollbar {
+  width: 4px;
 }
 
 .hero-title {
