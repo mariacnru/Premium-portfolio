@@ -123,3 +123,14 @@ html::-webkit-scrollbar {
 
   color: rgba(255, 255, 255, 0.45);
 }
+
+.grid-item {
+  aspect-ratio: 1 / 1;
+
+  border-radius: 0.75rem;
+
+  background-color: rgba(9, 9, 11, 0.01);
+
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+}
