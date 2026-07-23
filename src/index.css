@@ -7,6 +7,7 @@
 
 html {
   scrollbar-color: #c084fc #090313;
+  @apply bg-zinc-950;
 }
 
 html::-webkit-scrollbar {
@@ -15,7 +16,7 @@ html::-webkit-scrollbar {
 
 .hero-title {
   font-family: "Zen Dots", sans-serif;
-  font-size: clamp(3rem, 7vw, 8rem);
+  font-size: clamp(2rem, 7vw, 8rem);
   font-weight: 400;
   line-height: 1.1;
   letter-spacing: -0.04em;

@@ -6,6 +6,9 @@ function Navbar({ showBall, setShowBall }) {
       onMouseEnter={function () {
         setShowBall(true);
       }}
+      onMouseLeave={function () {
+        setShowBall(false);
+      }}
       className="
         fixed
         left-1/2
