@@ -1,6 +1,6 @@
 import React from "react";
 import { IoPhonePortraitOutline } from "react-icons/io5";
-import { RiTelegram2Line, RiTelegramLine } from "react-icons/ri";
+import { RiTelegram2Line } from "react-icons/ri";
 
 function Contact() {
   return (
@@ -88,41 +88,40 @@ function Contact() {
               opportunities.
             </p>
 
-            {/* Email */}
             {/* Contact Links */}
             <div className="mt-10 flex flex-col gap-4">
               {/* Email */}
               <a
                 href="mailto:mariacnru@gmail.com"
                 className="
-      group
-      flex
-      items-center
-      gap-4
-      text-lg
-      text-white/70
-      transition-colors
-      duration-300
-      hover:text-purple-300
-    "
+                  group
+                  flex
+                  items-center
+                  gap-4
+                  text-lg
+                  text-white/70
+                  transition-colors
+                  duration-300
+                  hover:text-purple-300
+                "
               >
                 <span
                   className="
-        flex
-        h-12
-        w-12
-        items-center
-        justify-center
-        rounded-full
-        border
-        border-white/10
-        bg-white/3
-        text-purple-400
-        transition-all
-        duration-300
-        group-hover:border-purple-500/30
-        group-hover:bg-purple-500/10
-      "
+                    flex
+                    h-12
+                    w-12
+                    items-center
+                    justify-center
+                    rounded-full
+                    border
+                    border-white/10
+                    bg-white/3
+                    text-purple-400
+                    transition-all
+                    duration-300
+                    group-hover:border-purple-500/30
+                    group-hover:bg-purple-500/10
+                  "
                 >
                   @
                 </span>
@@ -136,34 +135,34 @@ function Contact() {
                 rel="noopener noreferrer"
                 aria-label="Telegram"
                 className="
-      group
-      flex
-      items-center
-      gap-4
-      text-lg
-      text-white/70
-      transition-colors
-      duration-300
-      hover:text-purple-300
-    "
+                  group
+                  flex
+                  items-center
+                  gap-4
+                  text-lg
+                  text-white/70
+                  transition-colors
+                  duration-300
+                  hover:text-purple-300
+                "
               >
                 <span
                   className="
-        flex
-        h-12
-        w-12
-        items-center
-        justify-center
-        rounded-full
-        border
-        border-white/10
-        bg-white/3
-        text-purple-400
-        transition-all
-        duration-300
-        group-hover:border-purple-500/30
-        group-hover:bg-purple-500/10
-      "
+                    flex
+                    h-12
+                    w-12
+                    items-center
+                    justify-center
+                    rounded-full
+                    border
+                    border-white/10
+                    bg-white/3
+                    text-purple-400
+                    transition-all
+                    duration-300
+                    group-hover:border-purple-500/30
+                    group-hover:bg-purple-500/10
+                  "
                 >
                   <RiTelegram2Line />
                 </span>
@@ -174,34 +173,34 @@ function Contact() {
               <a
                 href="tel:+989336049409"
                 className="
-      group
-      flex
-      items-center
-      gap-4
-      text-lg
-      text-white/70
-      transition-colors
-      duration-300
-      hover:text-purple-300
-    "
+                  group
+                  flex
+                  items-center
+                  gap-4
+                  text-lg
+                  text-white/70
+                  transition-colors
+                  duration-300
+                  hover:text-purple-300
+                "
               >
                 <span
                   className="
-        flex
-        h-12
-        w-12
-        items-center
-        justify-center
-        rounded-full
-        border
-        border-white/10
-        bg-white/3
-        text-purple-400
-        transition-all
-        duration-300
-        group-hover:border-purple-500/30
-        group-hover:bg-purple-500/10
-      "
+                    flex
+                    h-12
+                    w-12
+                    items-center
+                    justify-center
+                    rounded-full
+                    border
+                    border-white/10
+                    bg-white/3
+                    text-purple-400
+                    transition-all
+                    duration-300
+                    group-hover:border-purple-500/30
+                    group-hover:bg-purple-500/10
+                  "
                 >
                   <IoPhonePortraitOutline />
                 </span>
@@ -210,11 +209,12 @@ function Contact() {
             </div>
 
             {/* Social Links */}
-            <div className="mt-12 flex gap-3">
+            <div className="mt-12 flex flex-wrap gap-3">
+              {/* GitHub */}
               <a
                 href="https://github.com/mariacnru"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 className="
                   rounded-full
                   border
@@ -232,138 +232,209 @@ function Contact() {
               >
                 GitHub ↗
               </a>
-
-              <a
-                href="#"
-                className="
-                  rounded-full
-                  border
-                  border-white/10
-                  px-5
-                  py-2.5
-                  text-sm
-                  text-white/40
-                  transition-all
-                  duration-300
-                  hover:border-purple-500/30
-                  hover:bg-purple-500/10
-                  hover:text-purple-300
-                "
-              >
-                LinkedIn ↗
-              </a>
             </div>
           </div>
 
-          {/* Form */}
-          <form
+          {/* Contact CTA Card */}
+          <div
             className="
+              group
+              relative
+              overflow-hidden
               rounded-3xl
               border
               border-white/10
-              bg-white/2
-              p-6
+              bg-white/[0.02]
+              p-8
               backdrop-blur-xl
-              sm:p-8
+              transition-all
+              duration-500
+              hover:border-purple-500/20
+              sm:p-10
             "
           >
-            {/* Name */}
-            <div>
-              <label
-                className="
-                  mb-2
-                  block
-                  text-sm
-                  text-white/40
-                "
-              >
-                Your Name
-              </label>
-
-              <input
-                type="text"
-                placeholder="John Doe"
-                className="w-full rounded-xl border border-white/10 bg-white/3 px-4 py-3 text-sm text-white outline-none placeholder:text-white/20 transition-all duration-300 focus:border-purple-500/40 focus:bg-purple-500/3 focus:ring-1 focus:ring-purple-500/20"
-              />
-            </div>
-
-            {/* Email */}
-            <div className="mt-6">
-              <label
-                className="
-                  mb-2
-                  block
-                  text-sm
-                  text-white/40
-                "
-              >
-                Email
-              </label>
-
-              <input
-                type="email"
-                placeholder="john@example.com"
-                className="w-full rounded-xl border border-white/10 bg-white/3 px-4 py-3 text-sm text-white outline-none placeholder:text-white/20 transition-all duration-300 focus:border-purple-500/40 focus:bg-purple-500/3 focus:ring-1 focus:ring-purple-500/20
-                "
-              />
-            </div>
-
-            {/* Message */}
-            <div className="mt-6">
-              <label
-                className="
-                  mb-2
-                  block
-                  text-sm
-                  text-white/40
-                "
-              >
-                Message
-              </label>
-
-              <textarea
-                rows="5"
-                placeholder="Tell me about your project..."
-                className="w-full resize-none rounded-xl border border-white/10 bg-white/3 px-4 py-3 text-sm text-white outline-none placeholder:text-white/20 transition-all duration-300 focus:border-purple-500/40 focus:bg-purple-500/3 focus:ring-1 focus:ring-purple-500/20"
-              ></textarea>
-            </div>
-
-            {/* Button */}
-            <button
-              type="submit"
+            {/* Card Glow */}
+            <div
               className="
-                group
-                mt-6
-                flex
-                w-full
-                items-center
-                justify-center
-                gap-3
-                rounded-xl
-                bg-purple-500
-                px-6
-                py-3.5
-                text-sm
-                font-medium
-                text-white
+                pointer-events-none
+                absolute
+                -right-24
+                -top-24
+                h-64
+                w-64
+                rounded-full
+                bg-purple-600/10
+                blur-[100px]
                 transition-all
-                duration-300
-                hover:bg-purple-400
-                hover:shadow-[0_0_40px_rgba(168,85,247,0.3)]
+                duration-700
+                group-hover:bg-purple-600/20
               "
-            >
-              Send Message
+            ></div>
+
+            <div className="relative">
+              {/* Badge */}
               <span
                 className="
-                  transition-transform
-                  duration-300
-                  group-hover:translate-x-1
+                  inline-flex
+                  rounded-full
+                  border
+                  border-purple-500/20
+                  bg-purple-500/10
+                  px-3
+                  py-1.5
+                  text-xs
+                  text-purple-300
                 "
               >
-                ↗
+                Let's connect
               </span>
-            </button>
-          </form>
+
+              {/* Title */}
+              <h3
+                className="
+                  mt-6
+                  text-3xl
+                  font-medium
+                  tracking-tight
+                  text-white
+                  sm:text-4xl
+                "
+              >
+                Have a project
+                <br />
+                <span className="text-white/30">in mind?</span>
+              </h3>
+
+              {/* Description */}
+              <p
+                className="
+                  mt-5
+                  max-w-md
+                  text-base
+                  leading-7
+                  text-white/40
+                "
+              >
+                I'm always open to discussing new projects, creative ideas, or
+                opportunities to be part of your vision.
+              </p>
+
+              {/* Main Email CTA */}
+              <a
+                href="mailto:mariacnru@gmail.com"
+                className="
+                  group/email
+                  mt-8
+                  flex
+                  items-center
+                  justify-between
+                  rounded-2xl
+                  border
+                  border-purple-500/20
+                  bg-purple-500/10
+                  px-5
+                  py-4
+                  text-sm
+                  text-purple-200
+                  transition-all
+                  duration-300
+                  hover:border-purple-500/40
+                  hover:bg-purple-500/20
+                  hover:shadow-[0_0_40px_rgba(168,85,247,0.1)]
+                "
+              >
+                <span>Send me an email</span>
+
+                <span
+                  className="
+                    text-lg
+                    transition-transform
+                    duration-300
+                    group-hover/email:translate-x-1
+                  "
+                >
+                  ↗
+                </span>
+              </a>
+
+              {/* Direct Contact */}
+              <div className="mt-8">
+                <p
+                  className="
+                    mb-4
+                    text-xs
+                    uppercase
+                    tracking-[0.2em]
+                    text-white/20
+                  "
+                >
+                  Or reach me directly
+                </p>
+
+                <div className="flex flex-wrap gap-3">
+                  {/* Telegram */}
+                  <a
+                    href="https://t.me/maryam_ahmadabadi"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="
+                      rounded-full
+                      border
+                      border-white/10
+                      px-5
+                      py-2.5
+                      text-sm
+                      text-white/50
+                      transition-all
+                      duration-300
+                      hover:border-purple-500/30
+                      hover:bg-purple-500/10
+                      hover:text-purple-300
+                    "
+                  >
+                    Telegram ↗
+                  </a>
+
+                  {/* GitHub */}
+                  <a
+                    href="https://github.com/mariacnru"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="
+                      rounded-full
+                      border
+                      border-white/10
+                      px-5
+                      py-2.5
+                      text-sm
+                      text-white/50
+                      transition-all
+                      duration-300
+                      hover:border-purple-500/30
+                      hover:bg-purple-500/10
+                      hover:text-purple-300
+                    "
+                  >
+                    GitHub ↗
+                  </a>
+                </div>
+              </div>
+
+              {/* Bottom Note */}
+              <div
+                className="
+                  mt-10
+                  border-t
+                  border-white/10
+                  pt-6
+                "
+              >
+                <p className="text-sm text-white/20">
+                  Usually respond within 24–48 hours.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Footer */}
