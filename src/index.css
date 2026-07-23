@@ -129,8 +129,16 @@ html::-webkit-scrollbar {
 
   border-radius: 0.75rem;
 
-  background-color: rgba(9, 9, 11, 0.01);
+  background-color: rgba(9, 9, 11, 0.03);
 
-  backdrop-filter: blur(12px) !important;
-  -webkit-backdrop-filter: blur(12px) !important;
+  /* Standard */
+  backdrop-filter: blur(12px);
+
+  /* WebKit */
+  -webkit-backdrop-filter: blur(12px);
+
+  /* Firefox fallback */
+  @supports not (backdrop-filter: blur(12px)) {
+    background-color: rgba(9, 9, 11, 0.08);
+  }
 }
