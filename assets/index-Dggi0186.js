@@ -43,23 +43,24 @@ Error generating stack: `+e.message+`
       border-b-0\r
       border-violet-500/5\r
     `})]}),e[0]=t):t=e[0],t}function ne(){let e=(0,S.c)(1),t;return e[0]===Symbol.for(`react.memo_cache_sentinel`)?(t=(0,C.jsx)(`div`,{className:`\r
-          absolute\r
-          inset-0\r
-          z-10\r
-          grid\r
-          grid-cols-4\r
-          sm:grid-cols-6\r
-          md:grid-cols-8\r
-          lg:grid-cols-10\r
-          xl:grid-cols-12\r
-          gap-2\r
-          p-2\r
-        `,children:Array.from({length:200}).map(re)}),e[0]=t):t=e[0],t}function re(e,t){return(0,C.jsx)(`div`,{className:`\r
-                aspect-square\r
-                rounded-xl\r
-                bg-transparent\r
-                backdrop-blur-md\r
-              `},t)}function w(e){let t=(0,S.c)(20),{showBall:n,setShowBall:r}=e,i;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(i={x:0,y:0},t[0]=i):i=t[0];let a=(0,_.useRef)(i),o;t[1]===Symbol.for(`react.memo_cache_sentinel`)?(o={x:0,y:0},t[1]=o):o=t[1];let s=(0,_.useRef)(o),c;t[2]===Symbol.for(`react.memo_cache_sentinel`)?(c={x:0,y:0},t[2]=c):c=t[2];let[l,u]=(0,_.useState)(c),d,f;t[3]===Symbol.for(`react.memo_cache_sentinel`)?(d=()=>{let e=function(e){a.current.x=e.clientX,a.current.y=e.clientY};window.addEventListener(`mousemove`,e);let t;function n(){s.current.x=s.current.x+(a.current.x-s.current.x)*.08,s.current.y=s.current.y+(a.current.y-s.current.y)*.08,u({x:s.current.x,y:s.current.y}),t=requestAnimationFrame(n)}return n(),()=>{window.removeEventListener(`mousemove`,e),cancelAnimationFrame(t)}},f=[],t[3]=d,t[4]=f):(d=t[3],f=t[4]),(0,_.useEffect)(d,f);let p,m;t[5]===r?(p=t[6],m=t[7]):(p=function(){r(!0)},m=function(){r(!1)},t[5]=r,t[6]=p,t[7]=m);let h=`
+        pointer-events-none\r
+        absolute\r
+        inset-0\r
+        z-10\r
+        grid\r
+        grid-cols-4\r
+        gap-2\r
+        p-2\r
+        sm:grid-cols-6\r
+        md:grid-cols-8\r
+        lg:grid-cols-10\r
+        xl:grid-cols-12\r
+      `,children:Array.from({length:48}).map(re)}),e[0]=t):t=e[0],t}function re(e,t){return(0,C.jsx)(`div`,{className:`\r
+              aspect-square\r
+              rounded-xl\r
+              bg-zinc-950/1\r
+              backdrop-blur-md\r
+            `},t)}function w(e){let t=(0,S.c)(20),{showBall:n,setShowBall:r}=e,i;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(i={x:0,y:0},t[0]=i):i=t[0];let a=(0,_.useRef)(i),o;t[1]===Symbol.for(`react.memo_cache_sentinel`)?(o={x:0,y:0},t[1]=o):o=t[1];let s=(0,_.useRef)(o),c;t[2]===Symbol.for(`react.memo_cache_sentinel`)?(c={x:0,y:0},t[2]=c):c=t[2];let[l,u]=(0,_.useState)(c),d,f;t[3]===Symbol.for(`react.memo_cache_sentinel`)?(d=()=>{let e=function(e){a.current.x=e.clientX,a.current.y=e.clientY};window.addEventListener(`mousemove`,e);let t;function n(){s.current.x=s.current.x+(a.current.x-s.current.x)*.08,s.current.y=s.current.y+(a.current.y-s.current.y)*.08,u({x:s.current.x,y:s.current.y}),t=requestAnimationFrame(n)}return n(),()=>{window.removeEventListener(`mousemove`,e),cancelAnimationFrame(t)}},f=[],t[3]=d,t[4]=f):(d=t[3],f=t[4]),(0,_.useEffect)(d,f);let p,m;t[5]===r?(p=t[6],m=t[7]):(p=function(){r(!0)},m=function(){r(!1)},t[5]=r,t[6]=p,t[7]=m);let h=`
           ball
           transition-opacity
           duration-500
@@ -504,13 +505,8 @@ Error generating stack: `+e.message+`
           w-125\r
           -translate-y-1/2\r
           rounded-full\r
-          bg-purple-600/20\r
-          opacity-70\r
-          blur-[100px]\r
-          sm:bg-purple-600/15\r
-          sm:blur-[120px]\r
-          md:bg-purple-600/10\r
-          md:blur-[150px]\r
+          bg-[radial-gradient(circle,rgba(168,85,247,0.22)_0%,rgba(168,85,247,0.12)_35%,rgba(168,85,247,0.05)_55%,transparent_75%)]\r
+          opacity-80\r
         `}),e[2]=a):a=e[2];let o;e[3]===Symbol.for(`react.memo_cache_sentinel`)?(o=(0,C.jsx)(`span`,{className:`\r
               text-sm\r
               uppercase\r
@@ -564,7 +560,7 @@ Error generating stack: `+e.message+`
                     rounded-full\r
                     border\r
                     border-white/10\r
-                    bg-white/[0.02]\r
+                    bg-white/2\r
                     px-5\r
                     py-3\r
                     backdrop-blur-xl\r
@@ -573,12 +569,12 @@ Error generating stack: `+e.message+`
 \r
                     active:scale-[0.96]\r
                     active:border-purple-500/30\r
-                    active:bg-purple-500/[0.06]\r
+                    active:bg-purple-500/6\r
                     active:shadow-[0_10px_30px_rgba(168,85,247,0.1)]\r
 \r
                     md:hover:-translate-y-1\r
                     md:hover:border-purple-500/30\r
-                    md:hover:bg-purple-500/[0.06]\r
+                    md:hover:bg-purple-500/6\r
                     md:hover:shadow-[0_10px_30px_rgba(168,85,247,0.1)]\r
                   `,children:[(0,C.jsx)(`span`,{className:`\r
                       h-1.5\r
@@ -612,7 +608,7 @@ Error generating stack: `+e.message+`
                   rounded-3xl\r
                   border\r
                   border-white/10\r
-                  bg-white/[0.02]\r
+                  bg-white/2\r
                   p-6\r
                   backdrop-blur-xl\r
                   transition-all\r
@@ -620,35 +616,31 @@ Error generating stack: `+e.message+`
 \r
                   active:scale-[0.98]\r
                   active:border-purple-500/30\r
-                  active:bg-purple-500/[0.04]\r
+                  active:bg-purple-500/4\r
                   active:shadow-[0_20px_60px_rgba(0,0,0,0.3),inset_0_0_40px_rgba(168,85,247,0.06)]\r
 \r
                   md:hover:-translate-y-2\r
                   md:hover:border-purple-500/30\r
-                  md:hover:bg-purple-500/[0.04]\r
+                  md:hover:bg-purple-500/4\r
                   md:hover:shadow-[0_20px_60px_rgba(0,0,0,0.3),inset_0_0_40px_rgba(168,85,247,0.06)]\r
                 `,children:[(0,C.jsx)(`div`,{className:`\r
                     pointer-events-none\r
                     absolute\r
-                    -right-16\r
-                    -top-16\r
-                    h-40\r
-                    w-40\r
+                    -right-20\r
+                    -top-20\r
+                    h-56\r
+                    w-56\r
                     rounded-full\r
-                    bg-purple-600/20\r
+                    bg-[radial-gradient(circle,rgba(168,85,247,0.25)_0%,rgba(168,85,247,0.12)_35%,rgba(168,85,247,0.04)_60%,transparent_75%)]\r
                     opacity-70\r
-                    blur-[60px]\r
                     transition-all\r
                     duration-500\r
 \r
                     active:scale-125\r
-                    active:bg-purple-600/30\r
                     active:opacity-100\r
 \r
                     md:opacity-0\r
-                    md:blur-3xl\r
                     md:group-hover:scale-125\r
-                    md:group-hover:bg-purple-600/30\r
                     md:group-hover:opacity-100\r
                   `}),(0,C.jsxs)(`div`,{className:`relative flex items-start justify-between`,children:[(0,C.jsx)(`span`,{className:`\r
                       flex\r
