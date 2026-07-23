@@ -5,30 +5,34 @@ function Work() {
     {
       title: "E-Commerce",
       description:
-        "A modern e-commerce experience with product filtering, wishlist and cart management.",
+        "A modern responsive e-commerce experience with product filtering, wishlist and cart management.",
       tech: ["React", "Tailwind CSS", "Context API"],
       number: "01",
+      link: "https://mariacnru.github.io/E-store/",
     },
     {
       title: "Admin Dashboard",
       description:
-        "A clean and responsive dashboard interface for managing products, users and data.",
-      tech: ["React", "Recharts", "Tailwind CSS"],
+        "A clean SPA dashboard interface for managing products, users, categories and data.",
+      tech: ["React", "Recharts", "Tailwind CSS", "Context API"],
       number: "02",
+      link: "https://mariacnru.github.io/professioal-admin-dashboard/",
     },
     {
-      title: "News Magazine",
+      title: "News Magazine Home Page",
       description:
-        "A responsive news magazine landing page with a modern editorial layout.",
+        "A responsive news magazine home page with a modern editorial layout.",
       tech: ["React", "JavaScript", "Tailwind CSS"],
       number: "03",
+      link: "https://mariacnru.github.io/news-magazine-landing/",
     },
     {
-      title: "Macfolio",
+      title: "Portfolio",
       description:
-        "A creative portfolio website focused on clean visuals and interactive experiences.",
-      tech: ["React", "React Router", "Tailwind CSS"],
+        "A creative SPA portfolio website focused on clean visuals, interactive experiences and the best performance.",
+      tech: ["React", "React Router", "Tailwind CSS", "Context API"],
       number: "04",
+      link: "https://mariacnru.github.io/frontEnd-developer-portfolio/",
     },
   ];
 
@@ -119,19 +123,21 @@ function Work() {
                 className="
                   group
                   relative
+                  flex
                   min-h-105
+                  flex-col
                   overflow-hidden
                   rounded-3xl
                   border
                   border-white/10
-                  bg-white/[0.02]
+                  bg-white/2
                   p-8
                   backdrop-blur-xl
                   transition-all
                   duration-500
                   hover:-translate-y-2
                   hover:border-purple-500/30
-                  hover:bg-purple-500/[0.03]
+                  hover:bg-purple-500/3
                   hover:shadow-[0_25px_70px_rgba(0,0,0,0.3),inset_0_0_40px_rgba(168,85,247,0.06)]
                 "
               >
@@ -158,6 +164,7 @@ function Work() {
                     mb-8
                     flex
                     h-48
+                    shrink-0
                     items-center
                     justify-center
                     overflow-hidden
@@ -218,79 +225,97 @@ function Work() {
                 </div>
 
                 {/* Content */}
-                <h3
-                  className="
-                    text-2xl
-                    font-medium
-                    transition-colors
-                    duration-300
-                    group-hover:text-purple-300
-                  "
-                >
-                  {project.title}
-                </h3>
+                <div className="flex flex-1 flex-col">
+                  {/* Title */}
+                  <h3
+                    className="
+                      text-2xl
+                      font-medium
+                      transition-colors
+                      duration-300
+                      group-hover:text-purple-300
+                    "
+                  >
+                    {project.title}
+                  </h3>
 
-                <p
-                  className="
-                    mt-3
-                    max-w-md
-                    text-sm
-                    leading-6
-                    text-white/40
-                  "
-                >
-                  {project.description}
-                </p>
+                  {/* Description */}
+                  <p
+                    className="
+                      mt-3
+                      max-w-md
+                      text-sm
+                      leading-6
+                      text-white/40
+                    "
+                  >
+                    {project.description}
+                  </p>
 
-                {/* Tech */}
-                <div className="mt-6 flex flex-wrap gap-2">
-                  {project.tech.map(function (item) {
-                    return (
-                      <span
-                        key={item}
-                        className="
-                          rounded-full
-                          border
-                          border-white/10
-                          px-3
-                          py-1
-                          text-xs
-                          text-white/40
-                          transition-colors
-                          duration-300
-                          group-hover:border-purple-500/20
-                          group-hover:text-purple-300/70
-                        "
-                      >
-                        {item}
-                      </span>
-                    );
-                  })}
-                </div>
+                  {/* Bottom Section */}
+                  <div
+                    className="
+                      mt-auto
+                      flex
+                      items-center
+                      justify-between
+                      gap-6
+                      pt-8
+                    "
+                  >
+                    {/* Tech Stack */}
+                    <div className="flex flex-1 flex-wrap gap-2">
+                      {project.tech.map(function (item) {
+                        return (
+                          <span
+                            key={item}
+                            className="
+                              rounded-full
+                              border
+                              border-white/10
+                              px-3
+                              py-1
+                              text-xs
+                              text-white/40
+                              transition-colors
+                              duration-300
+                              group-hover:border-purple-500/20
+                              group-hover:text-purple-300/70
+                            "
+                          >
+                            {item}
+                          </span>
+                        );
+                      })}
+                    </div>
 
-                {/* Arrow */}
-                <div
-                  className="
-                    absolute
-                    bottom-8
-                    right-8
-                    flex
-                    h-10
-                    w-10
-                    items-center
-                    justify-center
-                    rounded-full
-                    border
-                    border-white/10
-                    text-white/40
-                    transition-all
-                    duration-300
-                    group-hover:border-purple-500/40
-                    group-hover:bg-purple-500/10
-                    group-hover:text-purple-300
-                  "
-                >
-                  ↗
+                    {/* Project Link */}
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`View ${project.title} project`}
+                      className="
+                        flex
+                        h-10
+                        w-10
+                        shrink-0
+                        items-center
+                        justify-center
+                        rounded-full
+                        border
+                        border-white/10
+                        text-white/40
+                        transition-all
+                        duration-300
+                        group-hover:border-purple-500/40
+                        group-hover:bg-purple-500/10
+                        group-hover:text-purple-300
+                      "
+                    >
+                      ↗
+                    </a>
+                  </div>
                 </div>
               </article>
             );
