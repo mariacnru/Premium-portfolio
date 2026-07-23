@@ -315,16 +315,15 @@ Error generating stack: `+e.message+`
         py-32\r
         text-white\r
       `,a=(0,C.jsx)(`div`,{className:`\r
-          pointer-events-none\r
-          absolute\r
-          right-0\r
-          top-1/3\r
-          h-100\r
-          w-100\r
-          rounded-full\r
-          bg-purple-600/10\r
-          blur-[150px]\r
-        `}),t=`relative mx-auto max-w-6xl`,n=(0,C.jsxs)(`div`,{className:`mb-20`,children:[(0,C.jsx)(`span`,{className:`\r
+    pointer-events-none\r
+    absolute\r
+    -right-40\r
+    top-1/3\r
+    h-150\r
+    w-150\r
+    rounded-full\r
+    bg-[radial-gradient(circle,rgba(168,85,247,0.18)_0%,rgba(168,85,247,0.08)_40%,transparent_70%)]\r
+  `}),t=`relative mx-auto max-w-6xl`,n=(0,C.jsxs)(`div`,{className:`mb-20`,children:[(0,C.jsx)(`span`,{className:`\r
               text-sm\r
               uppercase\r
               tracking-[0.3em]\r
@@ -380,24 +379,27 @@ Error generating stack: `+e.message+`
                   rounded-3xl\r
                   border\r
                   border-white/10\r
-                  bg-white/2\r
-                  p-8\r
+                  bg-white/[0.02]\r
+                  p-6\r
                   backdrop-blur-xl\r
                   transition-all\r
                   duration-500\r
                   hover:-translate-y-2\r
                   hover:border-purple-500/30\r
-                  hover:bg-purple-500/3\r
+                  hover:bg-purple-500/[0.03]\r
                   hover:shadow-[0_25px_70px_rgba(0,0,0,0.3),inset_0_0_40px_rgba(168,85,247,0.06)]\r
+                  sm:p-8\r
                 `,children:[(0,C.jsx)(`span`,{className:`\r
                     absolute\r
-                    right-8\r
-                    top-8\r
+                    right-6\r
+                    top-6\r
                     text-sm\r
                     text-white/20\r
                     transition-colors\r
                     duration-300\r
                     group-hover:text-purple-400/70\r
+                    sm:right-8\r
+                    sm:top-8\r
                   `,children:e.number}),(0,C.jsxs)(`div`,{className:`\r
                     relative\r
                     mb-8\r
@@ -412,16 +414,15 @@ Error generating stack: `+e.message+`
                     border-white/5\r
                     bg-zinc-900\r
                   `,children:[(0,C.jsx)(`div`,{className:`\r
+                      pointer-events-none\r
                       absolute\r
-                      h-32\r
-                      w-32\r
+                      h-40\r
+                      w-40\r
                       rounded-full\r
-                      bg-purple-600/20\r
-                      blur-3xl\r
-                      transition-all\r
+                      bg-[radial-gradient(circle,rgba(168,85,247,0.28)_0%,rgba(168,85,247,0.12)_35%,transparent_70%)]\r
+                      transition-transform\r
                       duration-500\r
                       group-hover:scale-150\r
-                      group-hover:bg-purple-500/30\r
                     `}),(0,C.jsxs)(`div`,{className:`\r
                       relative\r
                       h-24\r
@@ -451,15 +452,25 @@ Error generating stack: `+e.message+`
                     `,children:e.description}),(0,C.jsxs)(`div`,{className:`\r
                       mt-auto\r
                       flex\r
-                      items-center\r
-                      justify-between\r
+                      flex-col\r
                       gap-6\r
                       pt-8\r
-                    `,children:[(0,C.jsx)(`div`,{className:`flex flex-1 flex-wrap gap-2`,children:e.tech.map(ce)}),(0,C.jsx)(`a`,{href:e.link,target:`_blank`,rel:`noopener noreferrer`,"aria-label":`View ${e.title} project`,className:`\r
+                      sm:flex-row\r
+                      sm:items-end\r
+                      sm:justify-between\r
+                    `,children:[(0,C.jsx)(`div`,{className:`\r
+                        flex\r
+                        flex-1\r
+                        flex-wrap\r
+                        gap-2\r
+                        pr-0\r
+                        sm:pr-4\r
+                      `,children:e.tech.map(ce)}),(0,C.jsx)(`a`,{href:e.link,target:`_blank`,rel:`noopener noreferrer`,"aria-label":`View ${e.title} project`,className:`\r
                         flex\r
                         h-10\r
                         w-10\r
                         shrink-0\r
+                        self-end\r
                         items-center\r
                         justify-center\r
                         rounded-full\r
@@ -468,9 +479,10 @@ Error generating stack: `+e.message+`
                         text-white/40\r
                         transition-all\r
                         duration-300\r
-                        group-hover:border-purple-500/40\r
-                        group-hover:bg-purple-500/10\r
-                        group-hover:text-purple-300\r
+                        hover:border-purple-500/40\r
+                        hover:bg-purple-500/10\r
+                        hover:text-purple-300\r
+                        sm:self-auto\r
                       `,children:`↗`})]})]})]},e.number)}function ce(e){return(0,C.jsx)(`span`,{className:`\r
                               rounded-full\r
                               border\r
@@ -553,25 +565,29 @@ Error generating stack: `+e.message+`
                     backdrop-blur-xl\r
                     transition-all\r
                     duration-300\r
-                    hover:-translate-y-1\r
-                    hover:border-purple-500/30\r
-                    hover:bg-purple-500/[0.06]\r
-                    hover:shadow-[0_10px_30px_rgba(168,85,247,0.1)]\r
+\r
+                    active:scale-[0.96]\r
+\r
+                    md:hover:-translate-y-1\r
+                    md:hover:border-purple-500/30\r
+                    md:hover:bg-purple-500/[0.06]\r
+                    md:hover:shadow-[0_10px_30px_rgba(168,85,247,0.1)]\r
                   `,children:[(0,C.jsx)(`span`,{className:`\r
                       h-1.5\r
                       w-1.5\r
                       rounded-full\r
-                      bg-white/20\r
+                      bg-purple-400/60\r
                       transition-all\r
                       duration-300\r
-                      group-hover:bg-purple-400\r
-                      group-hover:shadow-[0_0_10px_rgba(168,85,247,0.8)]\r
+                      md:bg-white/20\r
+                      md:group-hover:bg-purple-400\r
+                      md:group-hover:shadow-[0_0_10px_rgba(168,85,247,0.8)]\r
                     `}),(0,C.jsx)(`span`,{className:`\r
                       text-sm\r
                       text-white/40\r
                       transition-colors\r
                       duration-300\r
-                      group-hover:text-purple-300\r
+                      md:group-hover:text-purple-300\r
                     `,children:e})]},e)}function T(e,t){return(0,C.jsxs)(`div`,{className:`\r
                   group\r
                   relative\r
@@ -579,15 +595,22 @@ Error generating stack: `+e.message+`
                   rounded-3xl\r
                   border\r
                   border-white/10\r
-                  bg-white/[0.02]\r
+                  bg-white/2\r
                   p-6\r
                   backdrop-blur-xl\r
                   transition-all\r
                   duration-500\r
-                  hover:-translate-y-2\r
-                  hover:border-purple-500/30\r
-                  hover:bg-purple-500/[0.04]\r
-                  hover:shadow-[0_20px_60px_rgba(0,0,0,0.3),inset_0_0_40px_rgba(168,85,247,0.06)]\r
+\r
+                  active:scale-[0.98]\r
+\r
+                  md:hover:-translate-y-2\r
+                  md:hover:border-purple-500/30\r
+                  md:hover:bg-purple-500/4\r
+                  md:hover:shadow-[0_20px_60px_rgba(0,0,0,0.3),inset_0_0_40px_rgba(168,85,247,0.06)]\r
+\r
+                 active:border-purple-500/30\r
+                 active:bg-purple-500/4\r
+                  active:shadow-[0_20px_60px_rgba(0,0,0,0.3),inset_0_0_40px_rgba(168,85,247,0.06)]\r
                 `,children:[(0,C.jsx)(`div`,{className:`\r
                     pointer-events-none\r
                     absolute\r
@@ -600,7 +623,7 @@ Error generating stack: `+e.message+`
                     blur-3xl\r
                     transition-all\r
                     duration-500\r
-                    group-hover:bg-purple-600/20\r
+                    md:group-hover:bg-purple-600/20\r
                   `}),(0,C.jsxs)(`div`,{className:`relative flex items-start justify-between`,children:[(0,C.jsx)(`span`,{className:`\r
                       flex\r
                       h-14\r
@@ -616,16 +639,17 @@ Error generating stack: `+e.message+`
                       text-purple-300\r
                       transition-all\r
                       duration-500\r
-                      group-hover:rotate-6\r
-                      group-hover:border-purple-400/30\r
-                      group-hover:bg-purple-500/10\r
-                      group-hover:shadow-[0_0_30px_rgba(168,85,247,0.2)]\r
+\r
+                      md:group-hover:rotate-6\r
+                      md:group-hover:border-purple-400/30\r
+                      md:group-hover:bg-purple-500/10\r
+                      md:group-hover:shadow-[0_0_30px_rgba(168,85,247,0.2)]\r
                     `,children:e.symbol}),(0,C.jsxs)(`span`,{className:`\r
                       text-xs\r
                       text-white/20\r
                       transition-colors\r
                       duration-300\r
-                      group-hover:text-purple-400/60\r
+                      md:group-hover:text-purple-400/60\r
                     `,children:[`0`,t+1]})]}),(0,C.jsx)(`h3`,{className:`\r
                     relative\r
                     mt-8\r
@@ -634,14 +658,15 @@ Error generating stack: `+e.message+`
                     text-white/90\r
                     transition-colors\r
                     duration-300\r
-                    group-hover:text-purple-300\r
+                    md:group-hover:text-purple-300\r
                   `,children:e.name}),(0,C.jsxs)(`div`,{className:`relative mt-3 flex items-center justify-between`,children:[(0,C.jsx)(`span`,{className:`text-sm text-white/30`,children:e.category}),(0,C.jsx)(`span`,{className:`\r
                       text-xs\r
                       text-white/20\r
                       transition-colors\r
                       duration-300\r
-                      group-hover:text-white/50\r
+                      md:group-hover:text-white/50\r
                     `,children:e.level})]}),(0,C.jsx)(`div`,{className:`\r
+                  hidden md:block\r
                     relative\r
                     mt-6\r
                     h-px\r
@@ -650,386 +675,510 @@ Error generating stack: `+e.message+`
                     bg-white/10\r
                   `,children:(0,C.jsx)(`div`,{className:`\r
                       h-full\r
-                      w-0\r
-                      bg-purple-500\r
+                      w-1/3\r
+                      bg-purple-500/60\r
                       shadow-[0_0_15px_rgba(168,85,247,0.8)]\r
                       transition-all\r
                       duration-700\r
-                      group-hover:w-full\r
-                    `})})]},e.name)}var E={color:void 0,size:void 0,className:void 0,style:void 0,attr:void 0},de=_.createContext&&_.createContext(E),fe=[`attr`,`size`,`title`];function pe(e,t){if(e==null)return{};var n,r,i=me(e,t);if(Object.getOwnPropertySymbols){var a=Object.getOwnPropertySymbols(e);for(r=0;r<a.length;r++)n=a[r],t.indexOf(n)===-1&&{}.propertyIsEnumerable.call(e,n)&&(i[n]=e[n])}return i}function me(e,t){if(e==null)return{};var n={};for(var r in e)if({}.hasOwnProperty.call(e,r)){if(t.indexOf(r)!==-1)continue;n[r]=e[r]}return n}function D(){return D=Object.assign?Object.assign.bind():function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var r in n)({}).hasOwnProperty.call(n,r)&&(e[r]=n[r])}return e},D.apply(null,arguments)}function O(e,t){var n=Object.keys(e);if(Object.getOwnPropertySymbols){var r=Object.getOwnPropertySymbols(e);t&&(r=r.filter(function(t){return Object.getOwnPropertyDescriptor(e,t).enumerable})),n.push.apply(n,r)}return n}function he(e){for(var t=1;t<arguments.length;t++){var n=arguments[t]==null?{}:arguments[t];t%2?O(Object(n),!0).forEach(function(t){ge(e,t,n[t])}):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(n)):O(Object(n)).forEach(function(t){Object.defineProperty(e,t,Object.getOwnPropertyDescriptor(n,t))})}return e}function ge(e,t,n){return(t=_e(t))in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _e(e){var t=ve(e,`string`);return typeof t==`symbol`?t:t+``}function ve(e,t){if(typeof e!=`object`||!e)return e;var n=e[Symbol.toPrimitive];if(n!==void 0){var r=n.call(e,t||`default`);if(typeof r!=`object`)return r;throw TypeError(`@@toPrimitive must return a primitive value.`)}return(t===`string`?String:Number)(e)}function ye(e){return e&&e.map((e,t)=>_.createElement(e.tag,he({key:t},e.attr),ye(e.child)))}function be(e){return t=>_.createElement(xe,D({attr:he({},e.attr)},t),ye(e.child))}function xe(e){var t=t=>{var n=e.attr,r=e.size,i=e.title,a=pe(e,fe),o=r||t.size||`1em`,s;return t.className&&(s=t.className),e.className&&(s=(s?s+` `:``)+e.className),_.createElement(`svg`,D({stroke:`currentColor`,fill:`currentColor`,strokeWidth:`0`},t.attr,n,a,{className:s,style:he(he({color:e.color||t.color},t.style),e.style),height:o,width:o,xmlns:`http://www.w3.org/2000/svg`}),i&&_.createElement(`title`,null,i),e.children)};return de===void 0?t(E):_.createElement(de.Consumer,null,e=>t(e))}function Se(e){return be({tag:`svg`,attr:{viewBox:`0 0 512 512`},child:[{tag:`rect`,attr:{width:`256`,height:`480`,x:`128`,y:`16`,fill:`none`,strokeLinecap:`round`,strokeLinejoin:`round`,strokeWidth:`32`,rx:`48`,ry:`48`},child:[]},{tag:`path`,attr:{fill:`none`,strokeLinecap:`round`,strokeLinejoin:`round`,strokeWidth:`32`,d:`M176 16h24a8 8 0 0 1 8 8h0a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16h0a8 8 0 0 1 8-8h24`},child:[]}]})(e)}function Ce(e){return be({tag:`svg`,attr:{viewBox:`0 0 24 24`,fill:`currentColor`},child:[{tag:`path`,attr:{d:`M17.0943 7.14643C17.6874 6.93123 17.9818 6.85378 18.1449 6.82608C18.1461 6.87823 18.1449 6.92051 18.1422 6.94825C17.9096 9.39217 16.8906 15.4048 16.3672 18.2026C16.2447 18.8578 16.1507 19.1697 15.5179 18.798C15.1014 18.5532 14.7245 18.2452 14.3207 17.9805C12.9961 17.1121 11.1 15.8189 11.2557 15.8967C9.95162 15.0373 10.4975 14.5111 11.2255 13.8093C11.3434 13.6957 11.466 13.5775 11.5863 13.4525C11.64 13.3967 11.9027 13.1524 12.2731 12.8081C13.4612 11.7035 15.7571 9.56903 15.8151 9.32202C15.8246 9.2815 15.8334 9.13045 15.7436 9.05068C15.6539 8.97092 15.5215 8.9982 15.4259 9.01989C15.2904 9.05064 13.1326 10.4769 8.95243 13.2986C8.33994 13.7192 7.78517 13.9242 7.28811 13.9134L7.29256 13.9156C6.63781 13.6847 5.9849 13.4859 5.32855 13.286C4.89736 13.1546 4.46469 13.0228 4.02904 12.8812C3.92249 12.8466 3.81853 12.8137 3.72083 12.783C8.24781 10.8109 11.263 9.51243 12.7739 8.884C14.9684 7.97124 16.2701 7.44551 17.0943 7.14643ZM19.5169 5.21806C19.2635 5.01244 18.985 4.91807 18.7915 4.87185C18.5917 4.82412 18.4018 4.80876 18.2578 4.8113C17.7814 4.81969 17.2697 4.95518 16.4121 5.26637C15.5373 5.58382 14.193 6.12763 12.0058 7.03736C10.4638 7.67874 7.39388 9.00115 2.80365 11.001C2.40046 11.1622 2.03086 11.3451 1.73884 11.5619C1.46919 11.7622 1.09173 12.1205 1.02268 12.6714C0.970519 13.0874 1.09182 13.4714 1.33782 13.7738C1.55198 14.037 1.82635 14.1969 2.03529 14.2981C2.34545 14.4483 2.76276 14.5791 3.12952 14.6941C3.70264 14.8737 4.27444 15.0572 4.84879 15.233C6.62691 15.7773 8.09066 16.2253 9.7012 17.2866C10.8825 18.0651 12.041 18.8775 13.2243 19.6531C13.6559 19.936 14.0593 20.2607 14.5049 20.5224C14.9916 20.8084 15.6104 21.0692 16.3636 20.9998C17.5019 20.8951 18.0941 19.8479 18.3331 18.5703C18.8552 15.7796 19.8909 9.68351 20.1332 7.13774C20.1648 6.80544 20.1278 6.433 20.097 6.25318C20.0653 6.068 19.9684 5.58448 19.5169 5.21806Z`},child:[]}]})(e)}function we(){let e=(0,S.c)(17),t;e[0]===Symbol.for(`react.memo_cache_sentinel`)?(t=(0,C.jsx)(`div`,{className:`\r
-          pointer-events-none\r
-          absolute\r
-          left-1/2\r
-          top-1/2\r
-          h-125\r
-          w-125\r
-          -translate-x-1/2\r
-          -translate-y-1/2\r
-          rounded-full\r
-          bg-purple-600/10\r
-          blur-[150px]\r
-        `}),e[0]=t):t=e[0];let n;e[1]===Symbol.for(`react.memo_cache_sentinel`)?(n=(0,C.jsx)(`span`,{className:`\r
+\r
+                      md:w-0\r
+                      md:group-hover:w-full\r
+                    `})})]},e.name)}var E={color:void 0,size:void 0,className:void 0,style:void 0,attr:void 0},de=_.createContext&&_.createContext(E),fe=[`attr`,`size`,`title`];function pe(e,t){if(e==null)return{};var n,r,i=me(e,t);if(Object.getOwnPropertySymbols){var a=Object.getOwnPropertySymbols(e);for(r=0;r<a.length;r++)n=a[r],t.indexOf(n)===-1&&{}.propertyIsEnumerable.call(e,n)&&(i[n]=e[n])}return i}function me(e,t){if(e==null)return{};var n={};for(var r in e)if({}.hasOwnProperty.call(e,r)){if(t.indexOf(r)!==-1)continue;n[r]=e[r]}return n}function D(){return D=Object.assign?Object.assign.bind():function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var r in n)({}).hasOwnProperty.call(n,r)&&(e[r]=n[r])}return e},D.apply(null,arguments)}function O(e,t){var n=Object.keys(e);if(Object.getOwnPropertySymbols){var r=Object.getOwnPropertySymbols(e);t&&(r=r.filter(function(t){return Object.getOwnPropertyDescriptor(e,t).enumerable})),n.push.apply(n,r)}return n}function he(e){for(var t=1;t<arguments.length;t++){var n=arguments[t]==null?{}:arguments[t];t%2?O(Object(n),!0).forEach(function(t){ge(e,t,n[t])}):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(n)):O(Object(n)).forEach(function(t){Object.defineProperty(e,t,Object.getOwnPropertyDescriptor(n,t))})}return e}function ge(e,t,n){return(t=_e(t))in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _e(e){var t=ve(e,`string`);return typeof t==`symbol`?t:t+``}function ve(e,t){if(typeof e!=`object`||!e)return e;var n=e[Symbol.toPrimitive];if(n!==void 0){var r=n.call(e,t||`default`);if(typeof r!=`object`)return r;throw TypeError(`@@toPrimitive must return a primitive value.`)}return(t===`string`?String:Number)(e)}function ye(e){return e&&e.map((e,t)=>_.createElement(e.tag,he({key:t},e.attr),ye(e.child)))}function be(e){return t=>_.createElement(xe,D({attr:he({},e.attr)},t),ye(e.child))}function xe(e){var t=t=>{var n=e.attr,r=e.size,i=e.title,a=pe(e,fe),o=r||t.size||`1em`,s;return t.className&&(s=t.className),e.className&&(s=(s?s+` `:``)+e.className),_.createElement(`svg`,D({stroke:`currentColor`,fill:`currentColor`,strokeWidth:`0`},t.attr,n,a,{className:s,style:he(he({color:e.color||t.color},t.style),e.style),height:o,width:o,xmlns:`http://www.w3.org/2000/svg`}),i&&_.createElement(`title`,null,i),e.children)};return de===void 0?t(E):_.createElement(de.Consumer,null,e=>t(e))}function Se(e){return be({tag:`svg`,attr:{viewBox:`0 0 512 512`},child:[{tag:`rect`,attr:{width:`256`,height:`480`,x:`128`,y:`16`,fill:`none`,strokeLinecap:`round`,strokeLinejoin:`round`,strokeWidth:`32`,rx:`48`,ry:`48`},child:[]},{tag:`path`,attr:{fill:`none`,strokeLinecap:`round`,strokeLinejoin:`round`,strokeWidth:`32`,d:`M176 16h24a8 8 0 0 1 8 8h0a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16h0a8 8 0 0 1 8-8h24`},child:[]}]})(e)}function Ce(e){return be({tag:`svg`,attr:{viewBox:`0 0 24 24`,fill:`currentColor`},child:[{tag:`path`,attr:{d:`M17.0943 7.14643C17.6874 6.93123 17.9818 6.85378 18.1449 6.82608C18.1461 6.87823 18.1449 6.92051 18.1422 6.94825C17.9096 9.39217 16.8906 15.4048 16.3672 18.2026C16.2447 18.8578 16.1507 19.1697 15.5179 18.798C15.1014 18.5532 14.7245 18.2452 14.3207 17.9805C12.9961 17.1121 11.1 15.8189 11.2557 15.8967C9.95162 15.0373 10.4975 14.5111 11.2255 13.8093C11.3434 13.6957 11.466 13.5775 11.5863 13.4525C11.64 13.3967 11.9027 13.1524 12.2731 12.8081C13.4612 11.7035 15.7571 9.56903 15.8151 9.32202C15.8246 9.2815 15.8334 9.13045 15.7436 9.05068C15.6539 8.97092 15.5215 8.9982 15.4259 9.01989C15.2904 9.05064 13.1326 10.4769 8.95243 13.2986C8.33994 13.7192 7.78517 13.9242 7.28811 13.9134L7.29256 13.9156C6.63781 13.6847 5.9849 13.4859 5.32855 13.286C4.89736 13.1546 4.46469 13.0228 4.02904 12.8812C3.92249 12.8466 3.81853 12.8137 3.72083 12.783C8.24781 10.8109 11.263 9.51243 12.7739 8.884C14.9684 7.97124 16.2701 7.44551 17.0943 7.14643ZM19.5169 5.21806C19.2635 5.01244 18.985 4.91807 18.7915 4.87185C18.5917 4.82412 18.4018 4.80876 18.2578 4.8113C17.7814 4.81969 17.2697 4.95518 16.4121 5.26637C15.5373 5.58382 14.193 6.12763 12.0058 7.03736C10.4638 7.67874 7.39388 9.00115 2.80365 11.001C2.40046 11.1622 2.03086 11.3451 1.73884 11.5619C1.46919 11.7622 1.09173 12.1205 1.02268 12.6714C0.970519 13.0874 1.09182 13.4714 1.33782 13.7738C1.55198 14.037 1.82635 14.1969 2.03529 14.2981C2.34545 14.4483 2.76276 14.5791 3.12952 14.6941C3.70264 14.8737 4.27444 15.0572 4.84879 15.233C6.62691 15.7773 8.09066 16.2253 9.7012 17.2866C10.8825 18.0651 12.041 18.8775 13.2243 19.6531C13.6559 19.936 14.0593 20.2607 14.5049 20.5224C14.9916 20.8084 15.6104 21.0692 16.3636 20.9998C17.5019 20.8951 18.0941 19.8479 18.3331 18.5703C18.8552 15.7796 19.8909 9.68351 20.1332 7.13774C20.1648 6.80544 20.1278 6.433 20.097 6.25318C20.0653 6.068 19.9684 5.58448 19.5169 5.21806Z`},child:[]}]})(e)}function we(){let e=(0,S.c)(19),t,n;e[0]===Symbol.for(`react.memo_cache_sentinel`)?(t=(0,C.jsx)(`div`,{className:`\r
+       pointer-events-none\r
+       absolute\r
+       left-1/2\r
+       top-1/2\r
+       h-80\r
+       w-80\r
+       -translate-x-1/2\r
+       -translate-y-1/2\r
+       rounded-full\r
+       bg-[radial-gradient(circle,rgba(168,85,247,0.16)_0%,rgba(168,85,247,0.08)_35%,transparent_70%)]\r
+       sm:h-125\r
+       sm:w-125\r
+       sm:bg-[radial-gradient(circle,rgba(168,85,247,0.18)_0%,rgba(168,85,247,0.08)_40%,transparent_70%)]\r
+     `}),n=(0,C.jsx)(`div`,{className:`\r
+      pointer-events-none\r
+      absolute\r
+      -right-32\r
+      top-1/3\r
+      h-64\r
+      w-64\r
+      rounded-full\r
+      bg-[radial-gradient(circle,rgba(168,85,247,0.12)_0%,transparent_70%)]\r
+      sm:h-96\r
+      sm:w-96\r
+    `}),e[0]=t,e[1]=n):(t=e[0],n=e[1]);let r;e[2]===Symbol.for(`react.memo_cache_sentinel`)?(r=(0,C.jsx)(`span`,{className:`\r
+          text-sm\r
+          uppercase\r
+          tracking-[0.3em]\r
+          text-purple-400\r
+        `,children:`Contact`}),e[2]=r):r=e[2];let i;e[3]===Symbol.for(`react.memo_cache_sentinel`)?(i=(0,C.jsxs)(`div`,{className:`mb-20`,children:[r,(0,C.jsxs)(`h2`,{className:`\r
+          mt-4\r
+          max-w-4xl\r
+          text-5xl\r
+          font-medium\r
+          leading-[1.1]\r
+          tracking-tight\r
+          sm:text-6xl\r
+          md:text-7xl\r
+        `,children:[`Let's build something`,(0,C.jsx)(`span`,{className:`text-white/30`,children:` meaningful together.`})]})]}),e[3]=i):i=e[3];let a;e[4]===Symbol.for(`react.memo_cache_sentinel`)?(a=(0,C.jsx)(`p`,{className:`\r
+            max-w-lg\r
+            text-lg\r
+            leading-8\r
+            text-white/40\r
+          `,children:`Have an idea, a project, or just want to say hello? Feel free to reach out. I'm always open to discussing new projects and creative opportunities.`}),e[4]=a):a=e[4];let o;e[5]===Symbol.for(`react.memo_cache_sentinel`)?(o=(0,C.jsxs)(`a`,{href:`mailto:mariacnru@gmail.com`,className:`\r
+              group\r
+              flex\r
+              items-center\r
+              gap-4\r
+              rounded-2xl\r
+              p-2\r
+              text-lg\r
+              text-white/70\r
+              transition-all\r
+              duration-300\r
+              active:scale-[0.98]\r
+              active:bg-purple-500/5\r
+              md:hover:text-purple-300\r
+            `,children:[(0,C.jsx)(`span`,{className:`\r
+                flex\r
+                h-12\r
+                w-12\r
+                shrink-0\r
+                items-center\r
+                justify-center\r
+                rounded-full\r
+                border\r
+                border-purple-500/20\r
+                bg-purple-500/10\r
+                text-purple-400\r
+                shadow-[0_0_25px_rgba(168,85,247,0.08)]\r
+                transition-all\r
+                duration-300\r
+                md:group-hover:border-purple-500/40\r
+                md:group-hover:bg-purple-500/15\r
+                md:group-hover:shadow-[0_0_30px_rgba(168,85,247,0.15)]\r
+              `,children:`@`}),(0,C.jsx)(`span`,{className:`break-all`,children:`mariacnru@gmail.com`})]}),e[5]=o):o=e[5];let s;e[6]===Symbol.for(`react.memo_cache_sentinel`)?(s=(0,C.jsxs)(`a`,{href:`https://t.me/maryam_ahmadabadi`,target:`_blank`,rel:`noopener noreferrer`,"aria-label":`Telegram`,className:`\r
+              group\r
+              flex\r
+              items-center\r
+              gap-4\r
+              rounded-2xl\r
+              p-2\r
+              text-lg\r
+              text-white/70\r
+              transition-all\r
+              duration-300\r
+              active:scale-[0.98]\r
+              active:bg-purple-500/5\r
+              md:hover:text-purple-300\r
+            `,children:[(0,C.jsx)(`span`,{className:`\r
+                flex\r
+                h-12\r
+                w-12\r
+                shrink-0\r
+                items-center\r
+                justify-center\r
+                rounded-full\r
+                border\r
+                border-purple-500/20\r
+                bg-purple-500/10\r
+                text-purple-400\r
+                shadow-[0_0_25px_rgba(168,85,247,0.08)]\r
+                transition-all\r
+                duration-300\r
+                md:group-hover:border-purple-500/40\r
+                md:group-hover:bg-purple-500/15\r
+                md:group-hover:shadow-[0_0_30px_rgba(168,85,247,0.15)]\r
+              `,children:(0,C.jsx)(Ce,{})}),`Telegram`]}),e[6]=s):s=e[6];let c;e[7]===Symbol.for(`react.memo_cache_sentinel`)?(c=(0,C.jsxs)(`div`,{className:`mt-10 flex flex-col gap-4`,children:[o,s,(0,C.jsxs)(`a`,{href:`tel:+989336049409`,className:`\r
+              group\r
+              flex\r
+              items-center\r
+              gap-4\r
+              rounded-2xl\r
+              p-2\r
+              text-lg\r
+              text-white/70\r
+              transition-all\r
+              duration-300\r
+              active:scale-[0.98]\r
+              active:bg-purple-500/5\r
+              md:hover:text-purple-300\r
+            `,children:[(0,C.jsx)(`span`,{className:`\r
+                flex\r
+                h-12\r
+                w-12\r
+                shrink-0\r
+                items-center\r
+                justify-center\r
+                rounded-full\r
+                border\r
+                border-purple-500/20\r
+                bg-purple-500/10\r
+                text-purple-400\r
+                shadow-[0_0_25px_rgba(168,85,247,0.08)]\r
+                transition-all\r
+                duration-300\r
+                md:group-hover:border-purple-500/40\r
+                md:group-hover:bg-purple-500/15\r
+                md:group-hover:shadow-[0_0_30px_rgba(168,85,247,0.15)]\r
+              `,children:(0,C.jsx)(Se,{})}),`+98 933 6049 409`]})]}),e[7]=c):c=e[7];let l;e[8]===Symbol.for(`react.memo_cache_sentinel`)?(l=(0,C.jsxs)(`div`,{children:[a,c,(0,C.jsx)(`div`,{className:`mt-12 flex flex-wrap gap-3`,children:(0,C.jsx)(`a`,{href:`https://github.com/mariacnru`,target:`_blank`,rel:`noopener noreferrer`,className:`\r
+              rounded-full\r
+              border\r
+              border-white/10\r
+              px-5\r
+              py-2.5\r
               text-sm\r
-              uppercase\r
-              tracking-[0.3em]\r
-              text-purple-400\r
-            `,children:`Contact`}),e[1]=n):n=e[1];let r;e[2]===Symbol.for(`react.memo_cache_sentinel`)?(r=(0,C.jsxs)(`div`,{className:`mb-20`,children:[n,(0,C.jsxs)(`h2`,{className:`\r
-              mt-4\r
-              max-w-4xl\r
-              text-5xl\r
+              text-white/40\r
+              transition-all\r
+              duration-300\r
+              active:scale-95\r
+              active:border-purple-500/40\r
+              active:bg-purple-500/10\r
+              active:text-purple-300\r
+              md:hover:border-purple-500/30\r
+              md:hover:bg-purple-500/10\r
+              md:hover:text-purple-300\r
+            `,children:`GitHub ↗`})})]}),e[8]=l):l=e[8];let u,d;e[9]===Symbol.for(`react.memo_cache_sentinel`)?(d=(0,C.jsx)(`div`,{className:`\r
+            pointer-events-none\r
+            absolute\r
+            -right-24\r
+            -top-24\r
+            h-64\r
+            w-64\r
+            rounded-full\r
+            bg-[radial-gradient(circle,rgba(168,85,247,0.22)_0%,rgba(168,85,247,0.08)_40%,transparent_70%)]\r
+            opacity-100\r
+            transition-all\r
+            duration-700\r
+            sm:-right-28\r
+            sm:-top-28\r
+            sm:h-72\r
+            sm:w-72\r
+            md:opacity-60\r
+            md:group-hover:scale-125\r
+            md:group-hover:opacity-100\r
+          `}),u=(0,C.jsx)(`div`,{className:`\r
+            pointer-events-none\r
+            absolute\r
+            -bottom-32\r
+            -left-32\r
+            h-64\r
+            w-64\r
+            rounded-full\r
+            bg-[radial-gradient(circle,rgba(168,85,247,0.10)_0%,transparent_70%)]\r
+            sm:h-80\r
+            sm:w-80\r
+          `}),e[9]=u,e[10]=d):(u=e[9],d=e[10]);let f;e[11]===Symbol.for(`react.memo_cache_sentinel`)?(f=(0,C.jsx)(`span`,{className:`\r
+              inline-flex\r
+              rounded-full\r
+              border\r
+              border-purple-500/30\r
+              bg-purple-500/10\r
+              px-3\r
+              py-1.5\r
+              text-xs\r
+              text-purple-300\r
+              shadow-[0_0_20px_rgba(168,85,247,0.08)]\r
+            `,children:`Let's connect`}),e[11]=f):f=e[11];let p,m;e[12]===Symbol.for(`react.memo_cache_sentinel`)?(p=(0,C.jsxs)(`h3`,{className:`\r
+              mt-6\r
+              text-3xl\r
               font-medium\r
-              leading-[1.1]\r
               tracking-tight\r
-              sm:text-6xl\r
-              md:text-7xl\r
-            `,children:[`Let's build something`,(0,C.jsx)(`span`,{className:`text-white/30`,children:` meaningful together.`})]})]}),e[2]=r):r=e[2];let i;e[3]===Symbol.for(`react.memo_cache_sentinel`)?(i=(0,C.jsx)(`p`,{className:`\r
-                max-w-lg\r
+              text-white\r
+              sm:text-4xl\r
+            `,children:[`Have a project`,(0,C.jsx)(`br`,{}),(0,C.jsx)(`span`,{className:`text-white/30`,children:`in mind?`})]}),m=(0,C.jsx)(`p`,{className:`\r
+              mt-5\r
+              max-w-md\r
+              text-base\r
+              leading-7\r
+              text-white/40\r
+            `,children:`I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.`}),e[12]=p,e[13]=m):(p=e[12],m=e[13]);let h;e[14]===Symbol.for(`react.memo_cache_sentinel`)?(h=(0,C.jsxs)(`a`,{href:`mailto:mariacnru@gmail.com`,className:`\r
+              group/email\r
+              mt-8\r
+              flex\r
+              items-center\r
+              justify-between\r
+              rounded-2xl\r
+              border\r
+              border-purple-500/30\r
+              bg-purple-500/10\r
+              px-5\r
+              py-4\r
+              text-sm\r
+              text-purple-200\r
+              shadow-[0_0_25px_rgba(168,85,247,0.05)]\r
+              transition-all\r
+              duration-300\r
+              active:scale-[0.98]\r
+              active:bg-purple-500/20\r
+              active:shadow-[0_0_35px_rgba(168,85,247,0.12)]\r
+              md:hover:border-purple-500/50\r
+              md:hover:bg-purple-500/20\r
+              md:hover:shadow-[0_0_40px_rgba(168,85,247,0.12)]\r
+            `,children:[(0,C.jsx)(`span`,{children:`Send me an email`}),(0,C.jsx)(`span`,{className:`\r
                 text-lg\r
-                leading-8\r
-                text-white/40\r
-              `,children:`Have an idea, a project, or just want to say hello? Feel free to reach out. I'm always open to discussing new projects and creative opportunities.`}),e[3]=i):i=e[3];let a;e[4]===Symbol.for(`react.memo_cache_sentinel`)?(a=(0,C.jsxs)(`a`,{href:`mailto:mariacnru@gmail.com`,className:`\r
-                  group\r
-                  flex\r
-                  items-center\r
-                  gap-4\r
-                  text-lg\r
-                  text-white/70\r
-                  transition-colors\r
-                  duration-300\r
-                  hover:text-purple-300\r
-                `,children:[(0,C.jsx)(`span`,{className:`\r
-                    flex\r
-                    h-12\r
-                    w-12\r
-                    items-center\r
-                    justify-center\r
-                    rounded-full\r
-                    border\r
-                    border-white/10\r
-                    bg-white/3\r
-                    text-purple-400\r
-                    transition-all\r
-                    duration-300\r
-                    group-hover:border-purple-500/30\r
-                    group-hover:bg-purple-500/10\r
-                  `,children:`@`}),`mariacnru@gmail.com`]}),e[4]=a):a=e[4];let o;e[5]===Symbol.for(`react.memo_cache_sentinel`)?(o=(0,C.jsxs)(`a`,{href:`https://t.me/maryam_ahmadabadi`,target:`_blank`,rel:`noopener noreferrer`,"aria-label":`Telegram`,className:`\r
-                  group\r
-                  flex\r
-                  items-center\r
-                  gap-4\r
-                  text-lg\r
-                  text-white/70\r
-                  transition-colors\r
-                  duration-300\r
-                  hover:text-purple-300\r
-                `,children:[(0,C.jsx)(`span`,{className:`\r
-                    flex\r
-                    h-12\r
-                    w-12\r
-                    items-center\r
-                    justify-center\r
-                    rounded-full\r
-                    border\r
-                    border-white/10\r
-                    bg-white/3\r
-                    text-purple-400\r
-                    transition-all\r
-                    duration-300\r
-                    group-hover:border-purple-500/30\r
-                    group-hover:bg-purple-500/10\r
-                  `,children:(0,C.jsx)(Ce,{})}),`Telegram`]}),e[5]=o):o=e[5];let s;e[6]===Symbol.for(`react.memo_cache_sentinel`)?(s=(0,C.jsxs)(`div`,{className:`mt-10 flex flex-col gap-4`,children:[a,o,(0,C.jsxs)(`a`,{href:`tel:+989336049409`,className:`\r
-                  group\r
-                  flex\r
-                  items-center\r
-                  gap-4\r
-                  text-lg\r
-                  text-white/70\r
-                  transition-colors\r
-                  duration-300\r
-                  hover:text-purple-300\r
-                `,children:[(0,C.jsx)(`span`,{className:`\r
-                    flex\r
-                    h-12\r
-                    w-12\r
-                    items-center\r
-                    justify-center\r
-                    rounded-full\r
-                    border\r
-                    border-white/10\r
-                    bg-white/3\r
-                    text-purple-400\r
-                    transition-all\r
-                    duration-300\r
-                    group-hover:border-purple-500/30\r
-                    group-hover:bg-purple-500/10\r
-                  `,children:(0,C.jsx)(Se,{})}),`+98 933 6049 409`]})]}),e[6]=s):s=e[6];let c;e[7]===Symbol.for(`react.memo_cache_sentinel`)?(c=(0,C.jsxs)(`div`,{children:[i,s,(0,C.jsx)(`div`,{className:`mt-12 flex flex-wrap gap-3`,children:(0,C.jsx)(`a`,{href:`https://github.com/mariacnru`,target:`_blank`,rel:`noopener noreferrer`,className:`\r
+                transition-transform\r
+                duration-300\r
+                group-active/email:translate-x-1\r
+                md:group-hover/email:translate-x-1\r
+              `,children:`↗`})]}),e[14]=h):h=e[14];let g;e[15]===Symbol.for(`react.memo_cache_sentinel`)?(g=(0,C.jsx)(`p`,{className:`\r
+                mb-4\r
+                text-xs\r
+                uppercase\r
+                tracking-[0.2em]\r
+                text-white/20\r
+              `,children:`Or reach me directly`}),e[15]=g):g=e[15];let _;e[16]===Symbol.for(`react.memo_cache_sentinel`)?(_=(0,C.jsxs)(`div`,{className:`mt-8`,children:[g,(0,C.jsxs)(`div`,{className:`flex flex-wrap gap-3`,children:[(0,C.jsx)(`a`,{href:`https://t.me/maryam_ahmadabadi`,target:`_blank`,rel:`noopener noreferrer`,className:`\r
                   rounded-full\r
                   border\r
                   border-white/10\r
                   px-5\r
                   py-2.5\r
                   text-sm\r
-                  text-white/40\r
+                  text-white/50\r
                   transition-all\r
                   duration-300\r
-                  hover:border-purple-500/30\r
-                  hover:bg-purple-500/10\r
-                  hover:text-purple-300\r
-                `,children:`GitHub ↗`})})]}),e[7]=c):c=e[7];let l;e[8]===Symbol.for(`react.memo_cache_sentinel`)?(l=(0,C.jsx)(`div`,{className:`\r
-                pointer-events-none\r
-                absolute\r
-                -right-24\r
-                -top-24\r
-                h-64\r
-                w-64\r
-                rounded-full\r
-                bg-purple-600/10\r
-                blur-[100px]\r
-                transition-all\r
-                duration-700\r
-                group-hover:bg-purple-600/20\r
-              `}),e[8]=l):l=e[8];let u;e[9]===Symbol.for(`react.memo_cache_sentinel`)?(u=(0,C.jsx)(`span`,{className:`\r
-                  inline-flex\r
+                  active:scale-95\r
+                  active:border-purple-500/40\r
+                  active:bg-purple-500/10\r
+                  active:text-purple-300\r
+                  md:hover:border-purple-500/30\r
+                  md:hover:bg-purple-500/10\r
+                  md:hover:text-purple-300\r
+                `,children:`Telegram ↗`}),(0,C.jsx)(`a`,{href:`https://github.com/mariacnru`,target:`_blank`,rel:`noopener noreferrer`,className:`\r
                   rounded-full\r
                   border\r
-                  border-purple-500/20\r
-                  bg-purple-500/10\r
-                  px-3\r
-                  py-1.5\r
-                  text-xs\r
-                  text-purple-300\r
-                `,children:`Let's connect`}),e[9]=u):u=e[9];let d,f;e[10]===Symbol.for(`react.memo_cache_sentinel`)?(d=(0,C.jsxs)(`h3`,{className:`\r
-                  mt-6\r
-                  text-3xl\r
-                  font-medium\r
-                  tracking-tight\r
-                  text-white\r
-                  sm:text-4xl\r
-                `,children:[`Have a project`,(0,C.jsx)(`br`,{}),(0,C.jsx)(`span`,{className:`text-white/30`,children:`in mind?`})]}),f=(0,C.jsx)(`p`,{className:`\r
-                  mt-5\r
-                  max-w-md\r
-                  text-base\r
-                  leading-7\r
-                  text-white/40\r
-                `,children:`I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.`}),e[10]=d,e[11]=f):(d=e[10],f=e[11]);let p;e[12]===Symbol.for(`react.memo_cache_sentinel`)?(p=(0,C.jsxs)(`a`,{href:`mailto:mariacnru@gmail.com`,className:`\r
-                  group/email\r
-                  mt-8\r
-                  flex\r
-                  items-center\r
-                  justify-between\r
-                  rounded-2xl\r
-                  border\r
-                  border-purple-500/20\r
-                  bg-purple-500/10\r
+                  border-white/10\r
                   px-5\r
-                  py-4\r
+                  py-2.5\r
                   text-sm\r
-                  text-purple-200\r
+                  text-white/50\r
                   transition-all\r
                   duration-300\r
-                  hover:border-purple-500/40\r
-                  hover:bg-purple-500/20\r
-                  hover:shadow-[0_0_40px_rgba(168,85,247,0.1)]\r
-                `,children:[(0,C.jsx)(`span`,{children:`Send me an email`}),(0,C.jsx)(`span`,{className:`\r
-                    text-lg\r
-                    transition-transform\r
-                    duration-300\r
-                    group-hover/email:translate-x-1\r
-                  `,children:`↗`})]}),e[12]=p):p=e[12];let m;e[13]===Symbol.for(`react.memo_cache_sentinel`)?(m=(0,C.jsx)(`p`,{className:`\r
-                    mb-4\r
-                    text-xs\r
-                    uppercase\r
-                    tracking-[0.2em]\r
-                    text-white/20\r
-                  `,children:`Or reach me directly`}),e[13]=m):m=e[13];let h;e[14]===Symbol.for(`react.memo_cache_sentinel`)?(h=(0,C.jsxs)(`div`,{className:`mt-8`,children:[m,(0,C.jsxs)(`div`,{className:`flex flex-wrap gap-3`,children:[(0,C.jsx)(`a`,{href:`https://t.me/maryam_ahmadabadi`,target:`_blank`,rel:`noopener noreferrer`,className:`\r
-                      rounded-full\r
-                      border\r
-                      border-white/10\r
-                      px-5\r
-                      py-2.5\r
-                      text-sm\r
-                      text-white/50\r
-                      transition-all\r
-                      duration-300\r
-                      hover:border-purple-500/30\r
-                      hover:bg-purple-500/10\r
-                      hover:text-purple-300\r
-                    `,children:`Telegram ↗`}),(0,C.jsx)(`a`,{href:`https://github.com/mariacnru`,target:`_blank`,rel:`noopener noreferrer`,className:`\r
-                      rounded-full\r
-                      border\r
-                      border-white/10\r
-                      px-5\r
-                      py-2.5\r
-                      text-sm\r
-                      text-white/50\r
-                      transition-all\r
-                      duration-300\r
-                      hover:border-purple-500/30\r
-                      hover:bg-purple-500/10\r
-                      hover:text-purple-300\r
-                    `,children:`GitHub ↗`})]})]}),e[14]=h):h=e[14];let g;e[15]===Symbol.for(`react.memo_cache_sentinel`)?(g=(0,C.jsxs)(`div`,{className:`\r
-            grid\r
-            gap-12\r
-            lg:grid-cols-2\r
-            lg:gap-20\r
-          `,children:[c,(0,C.jsxs)(`div`,{className:`\r
-              group\r
-              relative\r
-              overflow-hidden\r
-              rounded-3xl\r
-              border\r
+                  active:scale-95\r
+                  active:border-purple-500/40\r
+                  active:bg-purple-500/10\r
+                  active:text-purple-300\r
+                  md:hover:border-purple-500/30\r
+                  md:hover:bg-purple-500/10\r
+                  md:hover:text-purple-300\r
+                `,children:`GitHub ↗`})]})]}),e[16]=_):_=e[16];let v;e[17]===Symbol.for(`react.memo_cache_sentinel`)?(v=(0,C.jsxs)(`div`,{className:`\r
+        grid\r
+        gap-12\r
+        lg:grid-cols-2\r
+        lg:gap-20\r
+      `,children:[l,(0,C.jsxs)(`div`,{className:`\r
+          group\r
+          relative\r
+          overflow-hidden\r
+          rounded-3xl\r
+          border\r
+          border-purple-500/20\r
+          bg-white/[0.02]\r
+          p-8\r
+          backdrop-blur-xl\r
+          shadow-[0_20px_70px_rgba(0,0,0,0.2),inset_0_0_50px_rgba(168,85,247,0.03)]\r
+          transition-all\r
+          duration-500\r
+          active:scale-[0.99]\r
+          active:border-purple-500/40\r
+          sm:p-10\r
+          md:border-white/10\r
+          md:hover:border-purple-500/30\r
+          md:hover:shadow-[0_25px_80px_rgba(0,0,0,0.3),inset_0_0_50px_rgba(168,85,247,0.05)]\r
+        `,children:[d,u,(0,C.jsxs)(`div`,{className:`relative`,children:[f,p,m,h,_,(0,C.jsx)(`div`,{className:`\r
+              mt-10\r
+              border-t\r
               border-white/10\r
-              bg-white/[0.02]\r
-              p-8\r
-              backdrop-blur-xl\r
+              pt-6\r
+            `,children:(0,C.jsx)(`p`,{className:`text-sm text-white/20`,children:`Usually respond within 24–48 hours.`})})]})]})]}),e[17]=v):v=e[17];let y;return e[18]===Symbol.for(`react.memo_cache_sentinel`)?(y=(0,C.jsxs)(`section`,{id:`contact`,className:`\r
+     relative\r
+     min-h-screen\r
+     overflow-hidden\r
+     bg-zinc-950\r
+     px-6\r
+     py-32\r
+     text-white\r
+   `,children:[` `,t,n,(0,C.jsxs)(`div`,{className:`relative mx-auto max-w-6xl`,children:[i,v,(0,C.jsxs)(`div`,{className:`\r
+        mt-32\r
+        flex\r
+        flex-col\r
+        gap-4\r
+        border-t\r
+        border-white/10\r
+        pt-8\r
+        text-sm\r
+        text-white/30\r
+        sm:flex-row\r
+        sm:items-center\r
+        sm:justify-between\r
+      `,children:[(0,C.jsx)(`span`,{children:`© 2026 Maria. All rights reserved.`}),(0,C.jsx)(`span`,{children:`Front-end Developer`})]})]})]}),e[18]=y):y=e[18],y}function Te(){let e=(0,S.c)(15),t;e[0]===Symbol.for(`react.memo_cache_sentinel`)?(t=[{name:`Home`,href:`#home`},{name:`About`,href:`#about`},{name:`Work`,href:`#work`},{name:`Skills`,href:`#skills`},{name:`Contact`,href:`#contact`}],e[0]=t):t=e[0];let n=t,r;e[1]===Symbol.for(`react.memo_cache_sentinel`)?(r=[{name:`Email ↗`,href:`mailto:mariacnru@gmail.com`},{name:`GitHub ↗`,href:`https://github.com/mariacnru`,external:!0},{name:`Telegram ↗`,href:`https://t.me/maryam_ahmadabadi`,external:!0},{name:`Phone ↗`,href:`tel:+989336049409`}],e[1]=r):r=e[1];let i=r,a,o,s;e[2]===Symbol.for(`react.memo_cache_sentinel`)?(a=(0,C.jsx)(`div`,{className:`\r
+       pointer-events-none\r
+       absolute\r
+       left-1/2\r
+       top-0\r
+       h-64\r
+       w-80\r
+       -translate-x-1/2\r
+       -translate-y-1/2\r
+       rounded-full\r
+       bg-[radial-gradient(circle,rgba(168,85,247,0.18)_0%,rgba(168,85,247,0.08)_40%,transparent_70%)]\r
+       sm:h-150\r
+       sm:w-150\r
+     `}),o=(0,C.jsx)(`div`,{className:`\r
+      pointer-events-none\r
+      absolute\r
+      -bottom-32\r
+      -left-32\r
+      h-64\r
+      w-64\r
+      rounded-full\r
+      bg-[radial-gradient(circle,rgba(168,85,247,0.08)_0%,transparent_70%)]\r
+      sm:h-96\r
+      sm:w-96\r
+    `}),s=(0,C.jsx)(`div`,{className:`\r
+      pointer-events-none\r
+      absolute\r
+      -bottom-32\r
+      -right-32\r
+      h-64\r
+      w-64\r
+      rounded-full\r
+      bg-[radial-gradient(circle,rgba(168,85,247,0.06)_0%,transparent_70%)]\r
+      sm:h-96\r
+      sm:w-96\r
+    `}),e[2]=a,e[3]=o,e[4]=s):(a=e[2],o=e[3],s=e[4]);let c,l;e[5]===Symbol.for(`react.memo_cache_sentinel`)?(c=(0,C.jsx)(`a`,{href:`#home`,className:`\r
+            group\r
+            inline-flex\r
+            items-center\r
+            font-['Zen_Dots']\r
+            text-lg\r
+            tracking-wider\r
+            text-white\r
+            transition-all\r
+            duration-300\r
+            active:scale-95\r
+            active:text-purple-400\r
+            md:hover:text-purple-400\r
+          `,children:(0,C.jsx)(`span`,{className:`\r
               transition-all\r
-              duration-500\r
-              hover:border-purple-500/20\r
-              sm:p-10\r
-            `,children:[l,(0,C.jsxs)(`div`,{className:`relative`,children:[u,d,f,p,h,(0,C.jsx)(`div`,{className:`\r
-                  mt-10\r
-                  border-t\r
-                  border-white/10\r
-                  pt-6\r
-                `,children:(0,C.jsx)(`p`,{className:`text-sm text-white/20`,children:`Usually respond within 24–48 hours.`})})]})]})]}),e[15]=g):g=e[15];let _;return e[16]===Symbol.for(`react.memo_cache_sentinel`)?(_=(0,C.jsxs)(`section`,{id:`contact`,className:`\r
-        relative\r
-        min-h-screen\r
-        overflow-hidden\r
-        bg-zinc-950\r
-        px-6\r
-        py-32\r
-        text-white\r
-      `,children:[t,(0,C.jsxs)(`div`,{className:`relative mx-auto max-w-6xl`,children:[r,g,(0,C.jsxs)(`div`,{className:`\r
-            mt-32\r
-            flex\r
-            flex-col\r
-            gap-4\r
-            border-t\r
-            border-white/10\r
-            pt-8\r
-            text-sm\r
-            text-white/30\r
-            sm:flex-row\r
-            sm:items-center\r
-            sm:justify-between\r
-          `,children:[(0,C.jsx)(`span`,{children:`© 2026 Maria. All rights reserved.`}),(0,C.jsx)(`span`,{children:`Front-end Developer`})]})]})]}),e[16]=_):_=e[16],_}function Te(){let e=(0,S.c)(7),t;e[0]===Symbol.for(`react.memo_cache_sentinel`)?(t=(0,C.jsx)(`div`,{className:`\r
-          pointer-events-none\r
-          absolute\r
-          left-1/2\r
-          top-0\r
-          h-75\r
-          w-150\r
-          -translate-x-1/2\r
-          -translate-y-1/2\r
-          rounded-full\r
-          bg-purple-600/10\r
-          blur-[120px]\r
-        `}),e[0]=t):t=e[0];let n,r;e[1]===Symbol.for(`react.memo_cache_sentinel`)?(n=(0,C.jsxs)(`div`,{className:`max-w-sm`,children:[(0,C.jsx)(`a`,{href:`#home`,className:`\r
-                font-['Zen_Dots']\r
-                text-lg\r
-                tracking-wider\r
-                text-white\r
-                transition-colors\r
-                duration-300\r
-                hover:text-purple-400\r
-              `,children:`MARIA`}),(0,C.jsx)(`p`,{className:`\r
-                mt-5\r
-                text-sm\r
-                leading-7\r
-                text-white/30\r
-              `,children:`Front-end Developer focused on creating modern, responsive and interactive digital experiences.`})]}),r=(0,C.jsx)(`span`,{className:`\r
-                text-xs\r
-                uppercase\r
-                tracking-[0.25em]\r
-                text-white/30\r
-              `,children:`Navigation`}),e[1]=n,e[2]=r):(n=e[1],r=e[2]);let i,a;e[3]===Symbol.for(`react.memo_cache_sentinel`)?(i=(0,C.jsxs)(`div`,{children:[r,(0,C.jsxs)(`div`,{className:`mt-5 flex flex-col gap-3`,children:[(0,C.jsx)(`a`,{href:`#home`,className:`\r
-                  w-fit\r
-                  text-sm\r
-                  text-white/50\r
-                  transition-colors\r
-                  duration-300\r
-                  hover:text-purple-300\r
-                `,children:`Home`}),(0,C.jsx)(`a`,{href:`#about`,className:`\r
-                  w-fit\r
-                  text-sm\r
-                  text-white/50\r
-                  transition-colors\r
-                  duration-300\r
-                  hover:text-purple-300\r
-                `,children:`About`}),(0,C.jsx)(`a`,{href:`#work`,className:`\r
-                  w-fit\r
-                  text-sm\r
-                  text-white/50\r
-                  transition-colors\r
-                  duration-300\r
-                  hover:text-purple-300\r
-                `,children:`Work`}),(0,C.jsx)(`a`,{href:`#skills`,className:`\r
-                  w-fit\r
-                  text-sm\r
-                  text-white/50\r
-                  transition-colors\r
-                  duration-300\r
-                  hover:text-purple-300\r
-                `,children:`Skills`}),(0,C.jsx)(`a`,{href:`#contact`,className:`\r
-                  w-fit\r
-                  text-sm\r
-                  text-white/50\r
-                  transition-colors\r
-                  duration-300\r
-                  hover:text-purple-300\r
-                `,children:`Contact`})]})]}),a=(0,C.jsx)(`span`,{className:`\r
-                text-xs\r
-                uppercase\r
-                tracking-[0.25em]\r
-                text-white/30\r
-              `,children:`Connect`}),e[3]=i,e[4]=a):(i=e[3],a=e[4]);let o;e[5]===Symbol.for(`react.memo_cache_sentinel`)?(o=(0,C.jsxs)(`div`,{className:`\r
-            flex\r
-            flex-col\r
-            gap-12\r
-            border-t\r
-            border-white/10\r
-            py-16\r
-            md:flex-row\r
-            md:items-start\r
-            md:justify-between\r
-          `,children:[n,i,(0,C.jsxs)(`div`,{children:[a,(0,C.jsxs)(`div`,{className:`mt-5 flex flex-col gap-3`,children:[(0,C.jsx)(`a`,{href:`mailto:mariacnru@gmail.com`,className:`\r
-                  text-sm\r
-                  text-white/50\r
-                  transition-colors\r
-                  duration-300\r
-                  hover:text-purple-300\r
-                `,children:`Email ↗`}),(0,C.jsx)(`a`,{href:`https://github.com/mariacnru`,target:`_blank`,rel:`noreferrer`,className:`\r
-                  text-sm\r
-                  text-white/50\r
-                  transition-colors\r
-                  duration-300\r
-                  hover:text-purple-300\r
-                `,children:`GitHub ↗`}),(0,C.jsx)(`a`,{href:`https://t.me/maryam_ahmadabadi`,target:`_blank`,rel:`noreferrer`,className:`\r
-                  text-sm\r
-                  text-white/50\r
-                  transition-colors\r
-                  duration-300\r
-                  hover:text-purple-300\r
-                `,children:`Telegram ↗`}),(0,C.jsx)(`a`,{href:`tel:+989336049409`,className:`\r
-                  text-sm\r
-                  text-white/50\r
-                  transition-colors\r
-                  duration-300\r
-                  hover:text-purple-300\r
-                `,children:`Phone ↗`})]})]})]}),e[5]=o):o=e[5];let s;return e[6]===Symbol.for(`react.memo_cache_sentinel`)?(s=(0,C.jsxs)(`footer`,{className:`relative overflow-hidden bg-zinc-950 text-white`,children:[t,(0,C.jsxs)(`div`,{className:`relative mx-auto max-w-6xl px-6`,children:[o,(0,C.jsxs)(`div`,{className:`\r
-            flex\r
-            flex-col\r
-            gap-4\r
-            border-t\r
-            border-white/10\r
-            py-6\r
-            text-xs\r
-            text-white/20\r
-            sm:flex-row\r
-            sm:items-center\r
-            sm:justify-between\r
-          `,children:[(0,C.jsx)(`span`,{children:`© 2026 Maria. All rights reserved.`}),(0,C.jsx)(`span`,{children:`Designed & Built with React`}),(0,C.jsx)(`a`,{href:`#home`,className:`\r
-              transition-colors\r
               duration-300\r
-              hover:text-purple-400\r
-            `,children:`Back to top ↑`})]})]})]}),e[6]=s):s=e[6],s}function Ee(){let e=(0,S.c)(12),[t,n]=(0,_.useState)(!1),r;e[0]===t?r=e[1]:(r=(0,C.jsx)(`header`,{children:(0,C.jsx)(ie,{showBall:t,setShowBall:n})}),e[0]=t,e[1]=r);let i;e[2]===t?i=e[3]:(i=(0,C.jsx)(`section`,{id:`home`,className:`scroll-mt-24 z-50`,children:(0,C.jsx)(w,{showBall:t,setShowBall:n})}),e[2]=t,e[3]=i);let a;e[4]===Symbol.for(`react.memo_cache_sentinel`)?(a=(0,C.jsx)(`section`,{id:`about`,className:`scroll-mt-24 z-50`,children:(0,C.jsx)(ae,{})}),e[4]=a):a=e[4];let o;e[5]===Symbol.for(`react.memo_cache_sentinel`)?(o=(0,C.jsx)(`section`,{id:`work`,className:`scroll-mt-24 z-50`,children:(0,C.jsx)(oe,{})}),e[5]=o):o=e[5];let s;e[6]===Symbol.for(`react.memo_cache_sentinel`)?(s=(0,C.jsx)(`section`,{id:`skills`,className:`scroll-mt-24 z-50`,children:(0,C.jsx)(le,{})}),e[6]=s):s=e[6];let c,l;e[7]===Symbol.for(`react.memo_cache_sentinel`)?(c=(0,C.jsx)(`section`,{id:`contact`,className:`scroll-mt-24 z-50`,children:(0,C.jsx)(we,{})}),l=(0,C.jsx)(Te,{}),e[7]=c,e[8]=l):(c=e[7],l=e[8]);let u;return e[9]!==r||e[10]!==i?(u=(0,C.jsxs)(`div`,{children:[r,i,a,o,s,c,l]}),e[9]=r,e[10]=i,e[11]=u):u=e[11],u}(0,v.createRoot)(document.getElementById(`root`)).render((0,C.jsx)(_.StrictMode,{children:(0,C.jsx)(Ee,{})}));
+              md:group-hover:[text-shadow:0_0_25px_rgba(168,85,247,0.5)]\r
+            `,children:`MARIA`})}),l=(0,C.jsx)(`p`,{className:`\r
+            mt-5\r
+            max-w-sm\r
+            text-sm\r
+            leading-7\r
+            text-white/30\r
+          `,children:`Front-end Developer focused on creating modern, responsive and interactive digital experiences.`}),e[5]=c,e[6]=l):(c=e[5],l=e[6]);let u,d;e[7]===Symbol.for(`react.memo_cache_sentinel`)?(u=(0,C.jsxs)(`div`,{className:`max-w-sm`,children:[c,l,(0,C.jsxs)(`div`,{className:`\r
+            mt-6\r
+            inline-flex\r
+            items-center\r
+            gap-2\r
+            rounded-full\r
+            border\r
+            border-white/10\r
+            bg-white/[0.02]\r
+            px-3\r
+            py-2\r
+            text-xs\r
+            text-white/30\r
+            backdrop-blur-xl\r
+          `,children:[(0,C.jsx)(`span`,{className:`\r
+              h-1.5\r
+              w-1.5\r
+              rounded-full\r
+              bg-purple-400\r
+              shadow-[0_0_10px_rgba(168,85,247,0.8)]\r
+            `}),`Available for new opportunities`]})]}),d=(0,C.jsx)(`span`,{className:`\r
+            text-xs\r
+            uppercase\r
+            tracking-[0.25em]\r
+            text-white/30\r
+          `,children:`Navigation`}),e[7]=u,e[8]=d):(u=e[7],d=e[8]);let f,p;e[9]===Symbol.for(`react.memo_cache_sentinel`)?(p=(0,C.jsxs)(`div`,{children:[d,(0,C.jsx)(`nav`,{className:`mt-5 flex flex-col gap-3`,children:n.map(De)})]}),f=(0,C.jsx)(`span`,{className:`\r
+            text-xs\r
+            uppercase\r
+            tracking-[0.25em]\r
+            text-white/30\r
+          `,children:`Connect`}),e[9]=f,e[10]=p):(f=e[9],p=e[10]);let m;e[11]===Symbol.for(`react.memo_cache_sentinel`)?(m=(0,C.jsxs)(`div`,{className:`\r
+        grid\r
+        gap-12\r
+        border-t\r
+        border-white/10\r
+        py-16\r
+        sm:grid-cols-2\r
+        lg:grid-cols-[1.5fr_1fr_1fr]\r
+        lg:gap-20\r
+      `,children:[u,p,(0,C.jsxs)(`div`,{children:[f,(0,C.jsx)(`div`,{className:`mt-5 flex flex-col gap-3`,children:i.map(Ee)})]})]}),e[11]=m):m=e[11];let h,g;e[12]===Symbol.for(`react.memo_cache_sentinel`)?(h=(0,C.jsx)(`span`,{children:`© 2026 Maria. All rights reserved.`}),g=(0,C.jsx)(`span`,{children:`Designed & Built with React`}),e[12]=h,e[13]=g):(h=e[12],g=e[13]);let _;return e[14]===Symbol.for(`react.memo_cache_sentinel`)?(_=(0,C.jsxs)(`footer`,{className:`relative overflow-hidden bg-zinc-950 text-white`,children:[` `,a,o,s,(0,C.jsxs)(`div`,{className:`relative mx-auto max-w-6xl px-6`,children:[m,(0,C.jsxs)(`div`,{className:`\r
+        flex\r
+        flex-col\r
+        gap-5\r
+        border-t\r
+        border-white/10\r
+        py-6\r
+        text-xs\r
+        text-white/20\r
+        sm:flex-row\r
+        sm:items-center\r
+        sm:justify-between\r
+      `,children:[h,g,(0,C.jsxs)(`a`,{href:`#home`,className:`\r
+          group\r
+          flex\r
+          w-fit\r
+          items-center\r
+          gap-2\r
+          text-white/30\r
+          transition-all\r
+          duration-300\r
+          active:scale-95\r
+          active:text-purple-400\r
+          md:hover:text-purple-400\r
+        `,children:[(0,C.jsx)(`span`,{children:`Back to top`}),(0,C.jsx)(`span`,{className:`\r
+            transition-transform\r
+            duration-300\r
+            group-active:-translate-y-1\r
+            md:group-hover:-translate-y-1\r
+          `,children:`↑`})]})]})]})]}),e[14]=_):_=e[14],_}function Ee(e){return(0,C.jsxs)(`a`,{href:e.href,target:e.external?`_blank`:void 0,rel:e.external?`noopener noreferrer`:void 0,className:`\r
+                  group\r
+                  flex\r
+                  w-fit\r
+                  items-center\r
+                  gap-2\r
+                  text-sm\r
+                  text-white/50\r
+                  transition-all\r
+                  duration-300\r
+                  active:translate-x-1\r
+                  active:text-purple-300\r
+                  md:hover:translate-x-1\r
+                  md:hover:text-purple-300\r
+                `,children:[(0,C.jsx)(`span`,{children:e.name}),(0,C.jsx)(`span`,{className:`\r
+                    text-purple-400\r
+                    opacity-0\r
+                    transition-opacity\r
+                    duration-300\r
+                    group-active:opacity-100\r
+                    md:group-hover:opacity-100\r
+                  `,children:`•`})]},e.name)}function De(e){return(0,C.jsxs)(`a`,{href:e.href,className:`\r
+                  group\r
+                  flex\r
+                  w-fit\r
+                  items-center\r
+                  gap-2\r
+                  text-sm\r
+                  text-white/50\r
+                  transition-all\r
+                  duration-300\r
+                  active:translate-x-1\r
+                  active:text-purple-300\r
+                  md:hover:translate-x-1\r
+                  md:hover:text-purple-300\r
+                `,children:[(0,C.jsx)(`span`,{children:e.name}),(0,C.jsx)(`span`,{className:`\r
+                    text-purple-400\r
+                    opacity-0\r
+                    transition-all\r
+                    duration-300\r
+                    group-active:opacity-100\r
+                    md:group-hover:opacity-100\r
+                  `,children:`↗`})]},e.name)}function Oe(){let e=(0,S.c)(12),[t,n]=(0,_.useState)(!1),r;e[0]===t?r=e[1]:(r=(0,C.jsx)(`header`,{children:(0,C.jsx)(ie,{showBall:t,setShowBall:n})}),e[0]=t,e[1]=r);let i;e[2]===t?i=e[3]:(i=(0,C.jsx)(`section`,{id:`home`,className:`scroll-mt-24 z-50`,children:(0,C.jsx)(w,{showBall:t,setShowBall:n})}),e[2]=t,e[3]=i);let a;e[4]===Symbol.for(`react.memo_cache_sentinel`)?(a=(0,C.jsx)(`section`,{id:`about`,className:`scroll-mt-24 z-50`,children:(0,C.jsx)(ae,{})}),e[4]=a):a=e[4];let o;e[5]===Symbol.for(`react.memo_cache_sentinel`)?(o=(0,C.jsx)(`section`,{id:`work`,className:`scroll-mt-24 z-50`,children:(0,C.jsx)(oe,{})}),e[5]=o):o=e[5];let s;e[6]===Symbol.for(`react.memo_cache_sentinel`)?(s=(0,C.jsx)(`section`,{id:`skills`,className:`scroll-mt-24 z-50`,children:(0,C.jsx)(le,{})}),e[6]=s):s=e[6];let c,l;e[7]===Symbol.for(`react.memo_cache_sentinel`)?(c=(0,C.jsx)(`section`,{id:`contact`,className:`scroll-mt-24 z-50`,children:(0,C.jsx)(we,{})}),l=(0,C.jsx)(Te,{}),e[7]=c,e[8]=l):(c=e[7],l=e[8]);let u;return e[9]!==r||e[10]!==i?(u=(0,C.jsxs)(`div`,{children:[r,i,a,o,s,c,l]}),e[9]=r,e[10]=i,e[11]=u):u=e[11],u}(0,v.createRoot)(document.getElementById(`root`)).render((0,C.jsx)(_.StrictMode,{children:(0,C.jsx)(Oe,{})}));
