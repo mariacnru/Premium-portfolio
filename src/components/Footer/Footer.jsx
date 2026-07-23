@@ -194,7 +194,7 @@ function Footer() {
               </a>
 
               <a
-                href="https://t.me/your_username"
+                href="https://t.me/maryam_ahmadabadi"
                 target="_blank"
                 rel="noreferrer"
                 className="
@@ -209,7 +209,7 @@ function Footer() {
               </a>
 
               <a
-                href="tel:+994XXXXXXXXX"
+                href="tel:+989336049409"
                 className="
                   text-sm
                   text-white/50

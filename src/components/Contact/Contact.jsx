@@ -116,7 +116,7 @@ function Contact() {
         rounded-full
         border
         border-white/10
-        bg-white/[0.03]
+        bg-white/3
         text-purple-400
         transition-all
         duration-300
@@ -157,7 +157,7 @@ function Contact() {
         rounded-full
         border
         border-white/10
-        bg-white/[0.03]
+        bg-white/3
         text-purple-400
         transition-all
         duration-300
@@ -195,7 +195,7 @@ function Contact() {
         rounded-full
         border
         border-white/10
-        bg-white/[0.03]
+        bg-white/3
         text-purple-400
         transition-all
         duration-300
@@ -261,7 +261,7 @@ function Contact() {
               rounded-3xl
               border
               border-white/10
-              bg-white/[0.02]
+              bg-white/2
               p-6
               backdrop-blur-xl
               sm:p-8
@@ -283,25 +283,7 @@ function Contact() {
               <input
                 type="text"
                 placeholder="John Doe"
-                className="
-                  w-full
-                  rounded-xl
-                  border
-                  border-white/10
-                  bg-white/[0.03]
-                  px-4
-                  py-3
-                  text-sm
-                  text-white
-                  outline-none
-                  placeholder:text-white/20
-                  transition-all
-                  duration-300
-                  focus:border-purple-500/40
-                  focus:bg-purple-500/[0.03]
-                  focus:ring-1
-                  focus:ring-purple-500/20
-                "
+                className="w-full rounded-xl border border-white/10 bg-white/3 px-4 py-3 text-sm text-white outline-none placeholder:text-white/20 transition-all duration-300 focus:border-purple-500/40 focus:bg-purple-500/3 focus:ring-1 focus:ring-purple-500/20"
               />
             </div>
 
@@ -321,24 +303,7 @@ function Contact() {
               <input
                 type="email"
                 placeholder="john@example.com"
-                className="
-                  w-full
-                  rounded-xl
-                  border
-                  border-white/10
-                  bg-white/[0.03]
-                  px-4
-                  py-3
-                  text-sm
-                  text-white
-                  outline-none
-                  placeholder:text-white/20
-                  transition-all
-                  duration-300
-                  focus:border-purple-500/40
-                  focus:bg-purple-500/[0.03]
-                  focus:ring-1
-                  focus:ring-purple-500/20
+                className="w-full rounded-xl border border-white/10 bg-white/3 px-4 py-3 text-sm text-white outline-none placeholder:text-white/20 transition-all duration-300 focus:border-purple-500/40 focus:bg-purple-500/3 focus:ring-1 focus:ring-purple-500/20
                 "
               />
             </div>
@@ -359,26 +324,7 @@ function Contact() {
               <textarea
                 rows="5"
                 placeholder="Tell me about your project..."
-                className="
-                  w-full
-                  resize-none
-                  rounded-xl
-                  border
-                  border-white/10
-                  bg-white/[0.03]
-                  px-4
-                  py-3
-                  text-sm
-                  text-white
-                  outline-none
-                  placeholder:text-white/20
-                  transition-all
-                  duration-300
-                  focus:border-purple-500/40
-                  focus:bg-purple-500/[0.03]
-                  focus:ring-1
-                  focus:ring-purple-500/20
-                "
+                className="w-full resize-none rounded-xl border border-white/10 bg-white/3 px-4 py-3 text-sm text-white outline-none placeholder:text-white/20 transition-all duration-300 focus:border-purple-500/40 focus:bg-purple-500/3 focus:ring-1 focus:ring-purple-500/20"
               ></textarea>
             </div>
 
