@@ -42,25 +42,7 @@ Error generating stack: `+e.message+`
       border\r
       border-b-0\r
       border-violet-500/5\r
-    `})]}),e[0]=t):t=e[0],t}function ne(){let e=(0,S.c)(1),t;return e[0]===Symbol.for(`react.memo_cache_sentinel`)?(t=(0,C.jsx)(`div`,{className:`\r
-        pointer-events-none\r
-        absolute\r
-        inset-0\r
-        z-10\r
-        grid\r
-        grid-cols-4\r
-        gap-2\r
-        p-2\r
-        sm:grid-cols-6\r
-        md:grid-cols-8\r
-        lg:grid-cols-10\r
-        xl:grid-cols-12\r
-      `,children:Array.from({length:48}).map(re)}),e[0]=t):t=e[0],t}function re(e,t){return(0,C.jsx)(`div`,{className:`\r
-              aspect-square\r
-              rounded-xl\r
-              bg-zinc-950/1\r
-              backdrop-blur-md\r
-            `},t)}function w(e){let t=(0,S.c)(20),{showBall:n,setShowBall:r}=e,i;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(i={x:0,y:0},t[0]=i):i=t[0];let a=(0,_.useRef)(i),o;t[1]===Symbol.for(`react.memo_cache_sentinel`)?(o={x:0,y:0},t[1]=o):o=t[1];let s=(0,_.useRef)(o),c;t[2]===Symbol.for(`react.memo_cache_sentinel`)?(c={x:0,y:0},t[2]=c):c=t[2];let[l,u]=(0,_.useState)(c),d,f;t[3]===Symbol.for(`react.memo_cache_sentinel`)?(d=()=>{let e=function(e){a.current.x=e.clientX,a.current.y=e.clientY};window.addEventListener(`mousemove`,e);let t;function n(){s.current.x=s.current.x+(a.current.x-s.current.x)*.08,s.current.y=s.current.y+(a.current.y-s.current.y)*.08,u({x:s.current.x,y:s.current.y}),t=requestAnimationFrame(n)}return n(),()=>{window.removeEventListener(`mousemove`,e),cancelAnimationFrame(t)}},f=[],t[3]=d,t[4]=f):(d=t[3],f=t[4]),(0,_.useEffect)(d,f);let p,m;t[5]===r?(p=t[6],m=t[7]):(p=function(){r(!0)},m=function(){r(!1)},t[5]=r,t[6]=p,t[7]=m);let h=`
+    `})]}),e[0]=t):t=e[0],t}function ne(){let e=(0,S.c)(1),t;return e[0]===Symbol.for(`react.memo_cache_sentinel`)?(t=(0,C.jsx)(`div`,{className:` absolute inset-0 z-10 grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10 xl:grid-cols-12 gap-2 p-2 `,children:Array.from({length:200}).map(re)}),e[0]=t):t=e[0],t}function re(e,t){return(0,C.jsx)(`div`,{className:`grid-item aspect-square rounded-xl bg-transparent backdrop-blur-md `},t)}function w(e){let t=(0,S.c)(20),{showBall:n,setShowBall:r}=e,i;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(i={x:0,y:0},t[0]=i):i=t[0];let a=(0,_.useRef)(i),o;t[1]===Symbol.for(`react.memo_cache_sentinel`)?(o={x:0,y:0},t[1]=o):o=t[1];let s=(0,_.useRef)(o),c;t[2]===Symbol.for(`react.memo_cache_sentinel`)?(c={x:0,y:0},t[2]=c):c=t[2];let[l,u]=(0,_.useState)(c),d,f;t[3]===Symbol.for(`react.memo_cache_sentinel`)?(d=()=>{let e=function(e){a.current.x=e.clientX,a.current.y=e.clientY};window.addEventListener(`mousemove`,e);let t;function n(){s.current.x=s.current.x+(a.current.x-s.current.x)*.08,s.current.y=s.current.y+(a.current.y-s.current.y)*.08,u({x:s.current.x,y:s.current.y}),t=requestAnimationFrame(n)}return n(),()=>{window.removeEventListener(`mousemove`,e),cancelAnimationFrame(t)}},f=[],t[3]=d,t[4]=f):(d=t[3],f=t[4]),(0,_.useEffect)(d,f);let p,m;t[5]===r?(p=t[6],m=t[7]):(p=function(){r(!0)},m=function(){r(!1)},t[5]=r,t[6]=p,t[7]=m);let h=`
           ball
           transition-opacity
           duration-500
