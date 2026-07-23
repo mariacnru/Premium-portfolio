@@ -172,18 +172,17 @@ Error generating stack: `+e.message+`
         shadow-[0_10px_40px_rgba(0,0,0,0.3)]\r
         backdrop-blur-xl\r
       `,children:[a,o,s]}),t[6]=r,t[7]=i,t[8]=c):c=t[8],c}function ae(){let e=(0,S.c)(9),t;e[0]===Symbol.for(`react.memo_cache_sentinel`)?(t=(0,C.jsx)(`div`,{className:`\r
-          pointer-events-none\r
-          absolute\r
-          left-1/2\r
-          top-1/2\r
-          h-125\r
-          w-125\r
-          -translate-x-1/2\r
-          -translate-y-1/2\r
-          rounded-full\r
-          bg-purple-600/10\r
-          blur-[150px]\r
-        `}),e[0]=t):t=e[0];let n;e[1]===Symbol.for(`react.memo_cache_sentinel`)?(n=(0,C.jsx)(`span`,{className:`\r
+    pointer-events-none\r
+    absolute\r
+    left-1/2\r
+    top-1/2\r
+    h-125\r
+    w-125\r
+    -translate-x-1/2\r
+    -translate-y-1/2\r
+    rounded-full\r
+    bg-[radial-gradient(circle,rgba(168,85,247,0.18)_0%,rgba(168,85,247,0.08)_35%,transparent_70%)]\r
+  `}),e[0]=t):t=e[0];let n;e[1]===Symbol.for(`react.memo_cache_sentinel`)?(n=(0,C.jsx)(`span`,{className:`\r
               text-sm\r
               uppercase\r
               tracking-[0.3em]\r
