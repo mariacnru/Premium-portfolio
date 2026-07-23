@@ -75,13 +75,8 @@ function Skills() {
           w-125
           -translate-y-1/2
           rounded-full
-          bg-purple-600/20
-          opacity-70
-          blur-[100px]
-          sm:bg-purple-600/15
-          sm:blur-[120px]
-          md:bg-purple-600/10
-          md:blur-[150px]
+          bg-[radial-gradient(circle,rgba(168,85,247,0.22)_0%,rgba(168,85,247,0.12)_35%,rgba(168,85,247,0.05)_55%,transparent_75%)]
+          opacity-80
         "
       ></div>
 
@@ -136,7 +131,7 @@ function Skills() {
                   rounded-3xl
                   border
                   border-white/10
-                  bg-white/[0.02]
+                  bg-white/2
                   p-6
                   backdrop-blur-xl
                   transition-all
@@ -144,12 +139,12 @@ function Skills() {
 
                   active:scale-[0.98]
                   active:border-purple-500/30
-                  active:bg-purple-500/[0.04]
+                  active:bg-purple-500/4
                   active:shadow-[0_20px_60px_rgba(0,0,0,0.3),inset_0_0_40px_rgba(168,85,247,0.06)]
 
                   md:hover:-translate-y-2
                   md:hover:border-purple-500/30
-                  md:hover:bg-purple-500/[0.04]
+                  md:hover:bg-purple-500/4
                   md:hover:shadow-[0_20px_60px_rgba(0,0,0,0.3),inset_0_0_40px_rgba(168,85,247,0.06)]
                 "
               >
@@ -158,25 +153,21 @@ function Skills() {
                   className="
                     pointer-events-none
                     absolute
-                    -right-16
-                    -top-16
-                    h-40
-                    w-40
+                    -right-20
+                    -top-20
+                    h-56
+                    w-56
                     rounded-full
-                    bg-purple-600/20
+                    bg-[radial-gradient(circle,rgba(168,85,247,0.25)_0%,rgba(168,85,247,0.12)_35%,rgba(168,85,247,0.04)_60%,transparent_75%)]
                     opacity-70
-                    blur-[60px]
                     transition-all
                     duration-500
 
                     active:scale-125
-                    active:bg-purple-600/30
                     active:opacity-100
 
                     md:opacity-0
-                    md:blur-3xl
                     md:group-hover:scale-125
-                    md:group-hover:bg-purple-600/30
                     md:group-hover:opacity-100
                   "
                 ></div>
@@ -338,7 +329,7 @@ function Skills() {
                     rounded-full
                     border
                     border-white/10
-                    bg-white/[0.02]
+                    bg-white/2
                     px-5
                     py-3
                     backdrop-blur-xl
@@ -347,12 +338,12 @@ function Skills() {
 
                     active:scale-[0.96]
                     active:border-purple-500/30
-                    active:bg-purple-500/[0.06]
+                    active:bg-purple-500/6
                     active:shadow-[0_10px_30px_rgba(168,85,247,0.1)]
 
                     md:hover:-translate-y-1
                     md:hover:border-purple-500/30
-                    md:hover:bg-purple-500/[0.06]
+                    md:hover:bg-purple-500/6
                     md:hover:shadow-[0_10px_30px_rgba(168,85,247,0.1)]
                   "
                 >
