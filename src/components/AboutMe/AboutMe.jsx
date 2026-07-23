@@ -17,18 +17,17 @@ function AboutMe() {
       {/* Background Glow */}
       <div
         className="
-          pointer-events-none
-          absolute
-          left-1/2
-          top-1/2
-          h-125
-          w-125
-          -translate-x-1/2
-          -translate-y-1/2
-          rounded-full
-          bg-purple-600/10
-          blur-[150px]
-        "
+    pointer-events-none
+    absolute
+    left-1/2
+    top-1/2
+    h-125
+    w-125
+    -translate-x-1/2
+    -translate-y-1/2
+    rounded-full
+    bg-[radial-gradient(circle,rgba(168,85,247,0.18)_0%,rgba(168,85,247,0.08)_35%,transparent_70%)]
+  "
       ></div>
 
       <div
@@ -168,7 +167,7 @@ function AboutMe() {
                   text-white
                 "
               >
-                10+
+                8+
               </span>
 
               <p className="mt-3 text-sm text-white/40">Projects Built</p>
@@ -199,7 +198,7 @@ function AboutMe() {
                   text-white
                 "
               >
-                4+
+                5+
               </span>
 
               <p className="mt-3 text-sm text-white/40">Technologies</p>

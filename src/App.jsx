@@ -12,7 +12,9 @@ function App() {
 
   return (
     <div>
-      <Navbar showBall={showBall} setShowBall={setShowBall} />
+      <header>
+        <Navbar showBall={showBall} setShowBall={setShowBall} />
+      </header>
 
       <section id="home" className="scroll-mt-24 z-50">
         <Header showBall={showBall} setShowBall={setShowBall} />

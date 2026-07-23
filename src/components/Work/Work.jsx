@@ -52,16 +52,15 @@ function Work() {
       {/* Background Glow */}
       <div
         className="
-          pointer-events-none
-          absolute
-          right-0
-          top-1/3
-          h-100
-          w-100
-          rounded-full
-          bg-purple-600/10
-          blur-[150px]
-        "
+    pointer-events-none
+    absolute
+    -right-40
+    top-1/3
+    h-150
+    w-150
+    rounded-full
+    bg-[radial-gradient(circle,rgba(168,85,247,0.18)_0%,rgba(168,85,247,0.08)_40%,transparent_70%)]
+  "
       ></div>
 
       <div className="relative mx-auto max-w-6xl">
@@ -130,28 +129,31 @@ function Work() {
                   rounded-3xl
                   border
                   border-white/10
-                  bg-white/2
-                  p-8
+                  bg-white/[0.02]
+                  p-6
                   backdrop-blur-xl
                   transition-all
                   duration-500
                   hover:-translate-y-2
                   hover:border-purple-500/30
-                  hover:bg-purple-500/3
+                  hover:bg-purple-500/[0.03]
                   hover:shadow-[0_25px_70px_rgba(0,0,0,0.3),inset_0_0_40px_rgba(168,85,247,0.06)]
+                  sm:p-8
                 "
               >
                 {/* Number */}
                 <span
                   className="
                     absolute
-                    right-8
-                    top-8
+                    right-6
+                    top-6
                     text-sm
                     text-white/20
                     transition-colors
                     duration-300
                     group-hover:text-purple-400/70
+                    sm:right-8
+                    sm:top-8
                   "
                 >
                   {project.number}
@@ -177,16 +179,15 @@ function Work() {
                   {/* Glow */}
                   <div
                     className="
+                      pointer-events-none
                       absolute
-                      h-32
-                      w-32
+                      h-40
+                      w-40
                       rounded-full
-                      bg-purple-600/20
-                      blur-3xl
-                      transition-all
+                      bg-[radial-gradient(circle,rgba(168,85,247,0.28)_0%,rgba(168,85,247,0.12)_35%,transparent_70%)]
+                      transition-transform
                       duration-500
                       group-hover:scale-150
-                      group-hover:bg-purple-500/30
                     "
                   ></div>
 
@@ -208,17 +209,24 @@ function Work() {
                       group-hover:scale-110
                     "
                   >
+                    {/* Browser Dots */}
                     <div className="flex gap-1 p-2">
                       <span className="h-1.5 w-1.5 rounded-full bg-purple-400/60"></span>
+
                       <span className="h-1.5 w-1.5 rounded-full bg-white/20"></span>
+
                       <span className="h-1.5 w-1.5 rounded-full bg-white/20"></span>
                     </div>
 
+                    {/* Fake Heading */}
                     <div className="mx-3 mt-3 h-2 w-16 rounded-full bg-purple-500/30"></div>
 
+                    {/* Fake Content */}
                     <div className="mx-3 mt-2 grid grid-cols-3 gap-1">
                       <div className="h-8 rounded bg-white/5"></div>
+
                       <div className="h-8 rounded bg-white/5"></div>
+
                       <div className="h-8 rounded bg-white/5"></div>
                     </div>
                   </div>
@@ -257,14 +265,25 @@ function Work() {
                     className="
                       mt-auto
                       flex
-                      items-center
-                      justify-between
+                      flex-col
                       gap-6
                       pt-8
+                      sm:flex-row
+                      sm:items-end
+                      sm:justify-between
                     "
                   >
                     {/* Tech Stack */}
-                    <div className="flex flex-1 flex-wrap gap-2">
+                    <div
+                      className="
+                        flex
+                        flex-1
+                        flex-wrap
+                        gap-2
+                        pr-0
+                        sm:pr-4
+                      "
+                    >
                       {project.tech.map(function (item) {
                         return (
                           <span
@@ -300,6 +319,7 @@ function Work() {
                         h-10
                         w-10
                         shrink-0
+                        self-end
                         items-center
                         justify-center
                         rounded-full
@@ -308,9 +328,10 @@ function Work() {
                         text-white/40
                         transition-all
                         duration-300
-                        group-hover:border-purple-500/40
-                        group-hover:bg-purple-500/10
-                        group-hover:text-purple-300
+                        hover:border-purple-500/40
+                        hover:bg-purple-500/10
+                        hover:text-purple-300
+                        sm:self-auto
                       "
                     >
                       ↗

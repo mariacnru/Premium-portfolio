@@ -69,14 +69,19 @@ function Skills() {
         className="
           pointer-events-none
           absolute
-          left-0
+          -left-40
           top-1/2
           h-125
           w-125
           -translate-y-1/2
           rounded-full
-          bg-purple-600/10
-          blur-[150px]
+          bg-purple-600/20
+          opacity-70
+          blur-[100px]
+          sm:bg-purple-600/15
+          sm:blur-[120px]
+          md:bg-purple-600/10
+          md:blur-[150px]
         "
       ></div>
 
@@ -136,27 +141,43 @@ function Skills() {
                   backdrop-blur-xl
                   transition-all
                   duration-500
-                  hover:-translate-y-2
-                  hover:border-purple-500/30
-                  hover:bg-purple-500/[0.04]
-                  hover:shadow-[0_20px_60px_rgba(0,0,0,0.3),inset_0_0_40px_rgba(168,85,247,0.06)]
+
+                  active:scale-[0.98]
+                  active:border-purple-500/30
+                  active:bg-purple-500/[0.04]
+                  active:shadow-[0_20px_60px_rgba(0,0,0,0.3),inset_0_0_40px_rgba(168,85,247,0.06)]
+
+                  md:hover:-translate-y-2
+                  md:hover:border-purple-500/30
+                  md:hover:bg-purple-500/[0.04]
+                  md:hover:shadow-[0_20px_60px_rgba(0,0,0,0.3),inset_0_0_40px_rgba(168,85,247,0.06)]
                 "
               >
-                {/* Glow */}
+                {/* Card Glow */}
                 <div
                   className="
                     pointer-events-none
                     absolute
-                    -right-10
-                    -top-10
-                    h-32
-                    w-32
+                    -right-16
+                    -top-16
+                    h-40
+                    w-40
                     rounded-full
-                    bg-purple-600/0
-                    blur-3xl
+                    bg-purple-600/20
+                    opacity-70
+                    blur-[60px]
                     transition-all
                     duration-500
-                    group-hover:bg-purple-600/20
+
+                    active:scale-125
+                    active:bg-purple-600/30
+                    active:opacity-100
+
+                    md:opacity-0
+                    md:blur-3xl
+                    md:group-hover:scale-125
+                    md:group-hover:bg-purple-600/30
+                    md:group-hover:opacity-100
                   "
                 ></div>
 
@@ -178,10 +199,16 @@ function Skills() {
                       text-purple-300
                       transition-all
                       duration-500
-                      group-hover:rotate-6
-                      group-hover:border-purple-400/30
-                      group-hover:bg-purple-500/10
-                      group-hover:shadow-[0_0_30px_rgba(168,85,247,0.2)]
+
+                      active:rotate-6
+                      active:border-purple-400/30
+                      active:bg-purple-500/10
+                      active:shadow-[0_0_30px_rgba(168,85,247,0.2)]
+
+                      md:group-hover:rotate-6
+                      md:group-hover:border-purple-400/30
+                      md:group-hover:bg-purple-500/10
+                      md:group-hover:shadow-[0_0_30px_rgba(168,85,247,0.2)]
                     "
                   >
                     {skill.symbol}
@@ -193,7 +220,10 @@ function Skills() {
                       text-white/20
                       transition-colors
                       duration-300
-                      group-hover:text-purple-400/60
+
+                      active:text-purple-400/60
+
+                      md:group-hover:text-purple-400/60
                     "
                   >
                     0{index + 1}
@@ -210,7 +240,10 @@ function Skills() {
                     text-white/90
                     transition-colors
                     duration-300
-                    group-hover:text-purple-300
+
+                    active:text-purple-300
+
+                    md:group-hover:text-purple-300
                   "
                 >
                   {skill.name}
@@ -228,7 +261,10 @@ function Skills() {
                       text-white/20
                       transition-colors
                       duration-300
-                      group-hover:text-white/50
+
+                      active:text-white/50
+
+                      md:group-hover:text-white/50
                     "
                   >
                     {skill.level}
@@ -238,6 +274,7 @@ function Skills() {
                 {/* Bottom Line */}
                 <div
                   className="
+                  hidden md:block
                     relative
                     mt-6
                     h-px
@@ -249,12 +286,16 @@ function Skills() {
                   <div
                     className="
                       h-full
-                      w-0
-                      bg-purple-500
+                      w-1/3
+                      bg-purple-500/60
                       shadow-[0_0_15px_rgba(168,85,247,0.8)]
                       transition-all
                       duration-700
-                      group-hover:w-full
+
+                      active:w-full
+
+                      md:w-0
+                      md:group-hover:w-full
                     "
                   ></div>
                 </div>
@@ -303,10 +344,16 @@ function Skills() {
                     backdrop-blur-xl
                     transition-all
                     duration-300
-                    hover:-translate-y-1
-                    hover:border-purple-500/30
-                    hover:bg-purple-500/[0.06]
-                    hover:shadow-[0_10px_30px_rgba(168,85,247,0.1)]
+
+                    active:scale-[0.96]
+                    active:border-purple-500/30
+                    active:bg-purple-500/[0.06]
+                    active:shadow-[0_10px_30px_rgba(168,85,247,0.1)]
+
+                    md:hover:-translate-y-1
+                    md:hover:border-purple-500/30
+                    md:hover:bg-purple-500/[0.06]
+                    md:hover:shadow-[0_10px_30px_rgba(168,85,247,0.1)]
                   "
                 >
                   {/* Dot */}
@@ -315,11 +362,18 @@ function Skills() {
                       h-1.5
                       w-1.5
                       rounded-full
-                      bg-white/20
+                      bg-purple-400/60
+                      shadow-[0_0_8px_rgba(168,85,247,0.4)]
                       transition-all
                       duration-300
-                      group-hover:bg-purple-400
-                      group-hover:shadow-[0_0_10px_rgba(168,85,247,0.8)]
+
+                      active:bg-purple-400
+                      active:shadow-[0_0_10px_rgba(168,85,247,0.8)]
+
+                      md:bg-white/20
+                      md:shadow-none
+                      md:group-hover:bg-purple-400
+                      md:group-hover:shadow-[0_0_10px_rgba(168,85,247,0.8)]
                     "
                   ></span>
 
@@ -330,7 +384,10 @@ function Skills() {
                       text-white/40
                       transition-colors
                       duration-300
-                      group-hover:text-purple-300
+
+                      active:text-purple-300
+
+                      md:group-hover:text-purple-300
                     "
                   >
                     {skill}
